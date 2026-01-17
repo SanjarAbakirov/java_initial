@@ -2,7 +2,7 @@ public class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
         int max_profit = 0;
-        
+
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 int profit = prices[j] - prices[i];
@@ -15,5 +15,9 @@ public class Solution {
     }
 }
 
-
-prices=[7,1,5,3,6,4]
+// method for testing
+public static void main(String[] args) {
+    Solution solution = new Solution();
+    // test data
+    int[] prices={7,1,5,3,6,4}
+}
