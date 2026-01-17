@@ -1,6 +1,6 @@
 // # ----from leetcode-----
 // # расчитай по какой цене самое выгодно купить акции (цены в умассиве) и покакой продать)
-// prices = [7, 1, 5, 3, 6, 4]
+prices = [7, 1, 5, 3, 6, 4]
 
 class Solution {
     public int maxProfit(int[] prices) {
