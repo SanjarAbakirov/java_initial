@@ -21,4 +21,6 @@ public static void main(String[] args) {
     // test data
     int[] prices = { 7, 1, 5, 3, 6, 4 }; // arr
 
+    int result = solution.maxProfit(prices);
+    System.out.println("maximum profit: " + result);
 }
