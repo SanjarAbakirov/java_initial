@@ -9,8 +9,11 @@ class Solution {
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 int profit = prices[j] - prices[j];
+                if (profit > max_profit) {
+                    max_profit = profit;
+                }
             }
         }
-
+        return max_profit;
     }
 }
