@@ -36,6 +36,7 @@ class Solution:
                         if triplet not in result:
                             #  нет ли такой же тройки уже в массиве
                             result.append(triplet)
+        print(f"\nTotal: founded {len(result)} uniqe triples")
         return result
 
 
