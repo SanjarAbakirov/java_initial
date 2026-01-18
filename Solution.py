@@ -9,9 +9,11 @@ from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+        # это тип
         #  cube complexity
         n = len(nums)
         result = []
+
         for i in range(n - 2):
             for j in range(i + 1, n - 1):
                 if nums[i] + nums[j] + nums[k] == 0:
