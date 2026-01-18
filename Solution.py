@@ -37,6 +37,7 @@ class Solution:
                             #  нет ли такой же тройки уже в массиве
                             result.append(triplet)
         print(f"\nTotal: founded {len(result)} uniqe triples")
+        print(f"The result: {result}")
         return result
 
 
