@@ -41,7 +41,7 @@ class Solution:
         return result
 
 
-# nums = [-1, 0, 1, 2, -1, -4]
+nums = [-1, 0, 1, 2, -1, -4]
 # this is our nums
 #  lets find all triples with the summ == 0
 
