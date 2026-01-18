@@ -25,6 +25,7 @@ class Solution:
                 for k in range(j + 1, n):
                     if nums[i] + nums[j] + nums[k] == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
+                        #  сортируем по возрастанию
                         if triplet not in result:
                             #  нет ли такой же тройки уже в массиве
                             result.append(triplet)
