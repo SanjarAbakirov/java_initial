@@ -26,6 +26,8 @@ class Solution:
                 #  а тут оставляет для двух
                 for k in range(j + 1, n):
                     sum = nums[i] + nums[j] + nums[k]
+                    print(
+                        f"Checking out: nums[{i}]={nums[i]}, nums[{j}]={nums[j]}, nums[{k}] = {nums[k]} = {sum}")
                     if nums[i] + nums[j] + nums[k] == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
                         #  сортируем по возрастанию
