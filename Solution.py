@@ -31,7 +31,9 @@ class Solution:
                             result.append(triplet)
         return result
 
-# [-1, 0, 1, 2, -1, -4] this is our nums
+
+# nums = [-1, 0, 1, 2, -1, -4]
+# this is our nums
 #  lets find all triples with the summ == 0
 
 # text: -1 + 0 + 1 = 0
