@@ -16,3 +16,4 @@ class Solution:
                     if triplet not in result:
                         result.append(triplet)
         return result
+    print(threeSum())
