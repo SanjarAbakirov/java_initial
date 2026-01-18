@@ -22,3 +22,5 @@ class Solution:
                         if triplet not in result:
                             result.append(triplet)
         return result
+
+# [-1, 0, 1, 2, -1, -4] this is our nums
