@@ -14,7 +14,7 @@ class Solution:
         # def threeSum — это "рецепт" (метод) для решения задачи
         # nums: List[int] — на вход дают список чисел (например: [1, 2, -3])
         # -> List[List[int]] — на выходе будет список списков (например: [[1, 2, -3]])
-
+        # nums = [-1, 0, 1, 2, -1, -4]
         n = len(nums)
         result = []
         print(f"Begining search of triples: {nums}")
@@ -41,7 +41,6 @@ class Solution:
         return result
 
 
-nums = [-1, 0, 1, 2, -1, -4]
 # this is our nums
 #  lets find all triples with the summ == 0
 
