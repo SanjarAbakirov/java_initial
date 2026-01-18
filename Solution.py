@@ -27,3 +27,4 @@ class Solution:
 #  lets find all triples with the summ == 0
 
 # text: -1 + 0 + 1 = 0
+#       -1 + -1 + 2 = 0
