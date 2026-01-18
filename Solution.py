@@ -19,7 +19,9 @@ class Solution:
         result = []
 
         for i in range(n - 2):
+            # оставляет место для двух элементов в конце очереди
             for j in range(i + 1, n - 1):
+                #  а тут оставляет для двух
                 for k in range(j + 1, n):
                     if nums[i] + nums[j] + nums[k] == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
