@@ -31,6 +31,7 @@ class Solution:
                     if sum == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
                         print(f"Found triplet! {triplet}")
+
                         #  сортируем по возрастанию
                         if triplet not in result:
                             #  нет ли такой же тройки уже в массиве
