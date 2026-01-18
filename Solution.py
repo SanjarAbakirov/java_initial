@@ -4,6 +4,7 @@
 
 # ex. leetcode
 
+#  cube complexity
 from typing import List
 
 
@@ -13,8 +14,7 @@ class Solution:
         # def threeSum — это "рецепт" (метод) для решения задачи
         # nums: List[int] — на вход дают список чисел (например: [1, 2, -3])
         # -> List[List[int]] — на выходе будет список списков (например: [[1, 2, -3]])
-        # это тип
-        #  cube complexity
+
         n = len(nums)
         result = []
 
