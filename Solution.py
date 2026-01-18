@@ -28,7 +28,7 @@ class Solution:
                     sum = nums[i] + nums[j] + nums[k]
                     print(
                         f"Checking out: nums[{i}]={nums[i]}, nums[{j}]={nums[j]}, nums[{k}] = {nums[k]} = {sum}")
-                    if nums[i] + nums[j] + nums[k] == 0:
+                    if sum == 0:
                         triplet = sorted([nums[i], nums[j], nums[k]])
                         #  сортируем по возрастанию
                         if triplet not in result:
