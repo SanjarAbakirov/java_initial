@@ -17,6 +17,8 @@ class Solution:
 
         n = len(nums)
         result = []
+        print(f"Begining search of triples: {nums}")
+        print(f"The summ is: {n}")
 
         for i in range(n - 2):
             # оставляет место для двух элементов в конце очереди
