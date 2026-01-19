@@ -4,14 +4,12 @@ public class BinaryWorld {
         String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
         System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
 
-
-        //testing second method
+        // testing second method
         String bcdCode = getBcdCode(decimalDigit);
         System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);
     }
 
-    // execution
-    public static String getBcdCode(int: digit){
+    public static String getBcdCode(int digit) {
         return switch(digit){
             case 0 -> "0000";
             case 1 -> "0001";
