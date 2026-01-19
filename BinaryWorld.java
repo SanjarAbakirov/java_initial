@@ -11,8 +11,7 @@ public class BinaryWorld {
     }
 
     // execution
-
-    public static String getBedCode(int: digit){
+    public static String getBcdCode(int: digit){
         return switch(digit){
             case 0 -> "0000";
             case 1 -> "0001";
