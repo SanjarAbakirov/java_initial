@@ -6,7 +6,8 @@ public class BinaryWorld {
 
 
         //testing second method
-        
+        String bcdCode = getBcdCode(decimalDigit);
+        System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);
     }
 
     // execution
