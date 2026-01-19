@@ -21,6 +21,10 @@ public class BinaryWorld {
             try {
                 // transform string to numbers
                 int decimalDigit = Integer.parseInt(input);
+
+                System.out.println("\nThe results for the number is " + decimalDigit + ":");
+                System.out.println("-".repeat(30));
+            );
             }
 
         }
