@@ -10,6 +10,9 @@ public class BinaryWorld {
             System.out.print("\nInsert number (or 'exit' for exit): ");
 
             // Reading string
+            String input = scanner.nextLine();
+
+            // Check out if user wants to be out
 
         }
 
