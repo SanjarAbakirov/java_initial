@@ -13,6 +13,9 @@ public class BinaryWorld {
             String input = scanner.nextLine();
 
             // Check out if user wants to be out
+            if (input.equalsIgnoreCase("exit")) {
+                System.out.println("Exit from the program. Bye bye");
+            }
 
         }
 
