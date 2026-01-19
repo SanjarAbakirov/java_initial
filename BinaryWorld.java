@@ -7,7 +7,6 @@ public class BinaryWorld {
         System.out.println("Enter your number");
 
         String decimalDigit = myObj.nextLine();
-        System.out.println("Username is: " + userName);
 
         // int decimalDigit = 5;
         String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
@@ -17,6 +16,7 @@ public class BinaryWorld {
         String bcdCode = getBcdCode(decimalDigit);
         System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);
 
+        // System.out.println("Username is: " + bcdCode);
     }
 
     public static String getBcdCode(int digit) {
