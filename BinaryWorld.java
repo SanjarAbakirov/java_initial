@@ -6,6 +6,13 @@ public class BinaryWorld {
 
         System.out.println("=".repeat(40));
 
+        while (true) {
+            System.out.print("\nInsert number (or 'exit' for exit): ");
+
+            // Reading string
+
+        }
+
         Integer decimalDigit = myObj.nextLine();
 
         // int decimalDigit = 5;
