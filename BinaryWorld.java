@@ -10,7 +10,7 @@ public class BinaryWorld {
     }
 
     public static String getBcdCode(int digit) {
-        return switch(digit){
+        return switch(digit) {
             case 0 -> "0000";
             case 1 -> "0001";
             case 2 -> "0010";
@@ -20,7 +20,7 @@ public class BinaryWorld {
             case 6 -> "0110";
             case 7 -> "0111";
             case 8 -> "1000";
-            case 9 -> "1010";
+            case 9 -> "1001";
             default -> throw new IllegalAccessException("Meet false int from 0 -> 9");
     }
     }
