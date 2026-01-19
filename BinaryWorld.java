@@ -15,6 +15,7 @@ public class BinaryWorld {
             // Check out if user wants to be out
             if (input.equalsIgnoreCase("exit")) {
                 System.out.println("Exit from the program. Bye bye");
+                break
             }
 
         }
