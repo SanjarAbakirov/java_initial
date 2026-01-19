@@ -21,7 +21,7 @@ public class BinaryWorld {
             case 7 -> "0111";
             case 8 -> "1000";
             case 9 -> "1001";
-            default -> throw new IllegalAccessException("Input must be between 0 and 9 false int from 0 -> 9");
+            default -> throw new IllegalArgumentException("Input must be between 0 and 9 false int from 0 -> 9");
         };
     }
 }
