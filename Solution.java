@@ -34,7 +34,7 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        java.util.Scanner myObj = new Scanner(System.in);
+        Scanner myObj = new Scanner(System.in);
         System.out.println("Enter username");
 
         String userName = myObj.nextLine();
