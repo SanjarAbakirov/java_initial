@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class BinaryWorld {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your number");
 
         Integer decimalDigit = myObj.nextLine();
