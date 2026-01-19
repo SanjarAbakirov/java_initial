@@ -38,6 +38,7 @@ class Main {
         System.out.println("Enter username");
 
         String userName = myObj.nextLine();
+        System.out.println("Username is: " + userName);
 
     }
 }
