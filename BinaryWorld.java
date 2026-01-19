@@ -6,10 +6,10 @@ public class BinaryWorld {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your number");
 
-        String digitalString = myObj.nextLine();
+        String decimalDigit = myObj.nextLine();
         System.out.println("Username is: " + userName);
 
-        int decimalDigit = 5;
+        // int decimalDigit = 5;
         String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
         System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
 
