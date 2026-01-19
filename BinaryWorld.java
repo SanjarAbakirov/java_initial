@@ -6,7 +6,7 @@ public class BinaryWorld {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your number");
 
-        String decimalDigit = myObj.nextLine();
+        Integer decimalDigit = myObj.nextLine();
 
         // int decimalDigit = 5;
         String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
