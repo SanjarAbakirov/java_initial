@@ -7,8 +7,10 @@ public class BinaryWorld {
 
     // execution
 
-    public static String getBedCode(int: digit){
-        return 
-    }
+    // public static String getBedCode(int: digit){
+    // return switch(digit){
+
+    // }
+    // }
 
 }
