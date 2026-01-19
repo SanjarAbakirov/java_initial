@@ -24,7 +24,7 @@ public class BinaryWorld {
 
                 System.out.println("\nThe results for the number is " + decimalDigit + ":");
                 System.out.println("-".repeat(30));
-            );
+            
             }
 
         }
