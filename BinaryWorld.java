@@ -4,4 +4,11 @@ public class BinaryWorld {
         String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
         System.out.println("The number" + decimalDigit + "in BCD: " + binaryCode),
     }
+
+    // execution
+
+    public static String getBedCode(int: digit){
+        return 
+    }
+
 }
