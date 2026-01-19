@@ -4,7 +4,7 @@ public class BinaryWorld {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your number");
+        System.out.println("=".repeat(40));
 
         Integer decimalDigit = myObj.nextLine();
 
