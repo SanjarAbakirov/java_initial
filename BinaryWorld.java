@@ -24,20 +24,24 @@ public class BinaryWorld {
 
                 System.out.println("\nThe results for the number is " + decimalDigit + ":");
                 System.out.println("-".repeat(30));
-            
-            }
+
+                // Way. Simple binar code
+                String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
+                System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
+
+                // testing second method
+                String bcdCode = getBcdCode(decimalDigit);
+                System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);    
+                }
+
+
 
         }
 
-        Integer decimalDigit = myObj.nextLine();
+       
 
-        // int decimalDigit = 5;
-        String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
-        System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
+   
 
-        // testing second method
-        String bcdCode = getBcdCode(decimalDigit);
-        System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);
 
         // System.out.println("Username is: " + bcdCode);
     }
