@@ -6,9 +6,6 @@ public class BinaryWorld {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your number");
 
-        String userName = myObj.nextLine();
-        System.out.println("Username is: " + userName);
-
         int decimalDigit = 5;
         String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
         System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
@@ -16,6 +13,10 @@ public class BinaryWorld {
         // testing second method
         String bcdCode = getBcdCode(decimalDigit);
         System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);
+
+        String digitalString = myObj.nextLine();
+        System.out.println("Username is: " + userName);
+
     }
 
     public static String getBcdCode(int digit) {
@@ -33,4 +34,5 @@ public class BinaryWorld {
             default -> throw new IllegalArgumentException("Input must be between 0 and 9 false int from 0 -> 9");
         };
     }
+
 }
