@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class BinaryWorld {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // system code
+        Scanner scanner = new Scanner(System.in); // system code - для чтения ввода
         System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз
 
         while (true) {
