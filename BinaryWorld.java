@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; // library from box - util.Scanner
 
 public class BinaryWorld {
     public static void main(String[] args) {
