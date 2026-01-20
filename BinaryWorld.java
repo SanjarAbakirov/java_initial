@@ -5,6 +5,8 @@ public class BinaryWorld {
         Scanner scanner = new Scanner(System.in); // system code - для чтения ввода
         System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз "="
         System.out.println(" Convert to binary code ");
+        System.out.println("=".repeat(40));
+        System.out.println("\nInsert you number from 0 to 9")
 
         while (true) {
             System.out.println("\nInsert number (or 'exit' for exit): ");
