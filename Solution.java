@@ -33,6 +33,7 @@
 import java.util.Scanner; // библиотека - специальный сканнер
 
 class Main {
+    // class означает директория
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in); //
         System.out.println("Enter username");
