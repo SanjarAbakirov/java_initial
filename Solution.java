@@ -41,6 +41,7 @@ class Main {
         // static - не двигается. не нужно создавать объект
         // void - ничего не возвращает
         // String[] args - аргументы командной строки
+        // это все большая кнопка запуска
         Scanner myObj = new Scanner(System.in); //
         System.out.println("Enter username");
 
