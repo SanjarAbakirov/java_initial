@@ -14,7 +14,8 @@ public class BinaryWorld {
         if (number < 0 || number > 9) { // check out the number is in correct diapasone
             System.out.println("Mulfunctions! It must be from 0 to 9!");
         } else {
-            String binaryCode = getBcdCode(number); // convert to binary code
+            String binaryCode = getBcdCode(number); // convert to binary code. takes values from binary code according
+                                                    // to number
             System.out.println("\n" + "-".repeat(30));
             System.out.println("Number: " + number);
             System.out.println("Binary code (BCD: " + binaryCode);
