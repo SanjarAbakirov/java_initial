@@ -18,7 +18,7 @@ public class BinaryWorld {
                                                     // to number
             System.out.println("\n" + "-".repeat(30));
             System.out.println("Number: " + number);
-            System.out.println("Binary code (BCD: " + binaryCode);
+            System.out.println("Binary code (BCD): " + binaryCode);
             System.out.println("-".repeat(30));
         }
         // closing scanner
