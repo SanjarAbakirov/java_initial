@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class BinaryWorld {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("=".repeat(40));
 
         while (true) {
