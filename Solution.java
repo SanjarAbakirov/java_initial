@@ -50,6 +50,7 @@ class Main {
 
         // по сути я говорю - Сканнер мой объект равно новый Сканер в нем системный вход
         // создай нового рабочего на заводе
+
         System.out.println("Enter username");
 
         String userName = myObj.nextLine();
