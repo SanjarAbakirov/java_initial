@@ -9,7 +9,7 @@ public class BinaryWorld {
         System.out.println("\nInsert you number from 0 to 9: ");
 
         int number = scanner.nextInt(); // read the number from (System.in)
-        
+
         if (number < 0 || number > 9) { // check out the number is in correct diapasone
             System.out.println("Mulfunctions! It must be from 0 to 9!");
         } else {
@@ -19,42 +19,8 @@ public class BinaryWorld {
             System.out.println("Binary code (BCD: " + binaryCode);
             System.out.println("-".repeat(30));
         }
-
-
-        while (true) {
-          
-            // Reading string
-            String input = scanner.nextLine();
-
-            // Check out if user wants to be out
-            if (input.equalsIgnoreCase("exit")) {
-                System.out.println("Exit from the program. Bye bye");
-                break;
-            }
-
-            try {
-                // transform string to numbers
-                int decimalDigit = Integer.parseInt(input);
-
-            
-
-                // Way. Simple binar code
-                String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
-                System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
-
-                // testing second method
-                
-                System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);    
-                    }
-
-        }
-
-       
-
-   
-
-
-        // System.out.println("Username is: " + bcdCode);
+        // closing scanner
+        scanner.close();
     }
 
     public static String getBcdCode(int digit) {
