@@ -30,7 +30,7 @@
 // SC O(1)
 
 // ---- input first iteration ------
-import java.util.Scanner;
+import java.util.Scanner; // склад библиотек
 
 class Main {
     public static void main(String[] args) {
