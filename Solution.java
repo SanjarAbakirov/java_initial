@@ -61,6 +61,10 @@ class Main {
 
         String userName = myObj.nextLine();
         System.out.println("Username is: " + userName);
+        // String - тип строка текста буквы
+        // username - переменная
+        // = означает - присвой
+        // myObj-
 
     }
 }
