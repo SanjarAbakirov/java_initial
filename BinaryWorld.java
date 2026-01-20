@@ -6,8 +6,7 @@ public class BinaryWorld {
         System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз
 
         while (true) {
-            System.out.print("\nInsert number (or 'exit' for exit): ");
-
+            System.out.println("\nInsert number (or 'exit' for exit): ");
             // Reading string
             String input = scanner.nextLine();
 
