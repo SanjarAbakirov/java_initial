@@ -4,6 +4,7 @@ public class BinaryWorld {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // system code
         System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз
+        System.out.println("Insert your number")
 
         while (true) {
             System.out.println("\nInsert number (or 'exit' for exit): ");
