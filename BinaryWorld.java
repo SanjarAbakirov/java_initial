@@ -12,10 +12,12 @@ public class BinaryWorld {
         
         if (number < 0 || number > 9) { // check out the number is in correct diapasone
             System.out.println("Mulfunctions! It must be from 0 to 9!");
+        } else {
+            String bcdCode = getBcdCode(decimalDigit);
         }
 
         while (true) {
-            System.out.println("\nInsert number (or 'exit' for exit): ");
+          
             // Reading string
             String input = scanner.nextLine();
 
@@ -29,15 +31,14 @@ public class BinaryWorld {
                 // transform string to numbers
                 int decimalDigit = Integer.parseInt(input);
 
-                System.out.println("\nThe results for the number is " + decimalDigit + ":");
-                System.out.println("-".repeat(30));
+            
 
                 // Way. Simple binar code
                 String binaryCode = String.format("%4s", Integer.toBinaryString(decimalDigit)).replace(' ', '0');
                 System.out.println("The number " + decimalDigit + " in BCD: " + binaryCode);
 
                 // testing second method
-                String bcdCode = getBcdCode(decimalDigit);
+                
                 System.out.println("The number " + decimalDigit + " in BCD: " + bcdCode);    
                     }
 
