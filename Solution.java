@@ -29,7 +29,7 @@
 // TC O(n^2)
 // SC O(1)
 
-// ---- input first iteration ------
+// --------- input first iteration ---------
 import java.util.Scanner; // склад библиотек
 
 class Main {
