@@ -1,7 +1,7 @@
 import java.util.Scanner; // library from box - util.Scanner to understand what we input
 
 public class BinaryWorld {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // main room where everething arrives
         Scanner scanner = new Scanner(System.in); // system code - для чтения ввода
         System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз "="
         System.out.println(" Convert to binary code ");
