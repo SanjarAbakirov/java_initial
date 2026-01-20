@@ -36,9 +36,10 @@ import java.util.Scanner;
 class Main {
     // class означает директория - Main имя директории
     public static void main(String[] args) {
+        // public - публичный доступ все могут заходить
         // main - главный контейнер
         // static - не двигается. не нужно создавать объект
-        // ничего не возвращает
+        // void - ничего не возвращает
         // String[] args - аргументы командной строки
         Scanner myObj = new Scanner(System.in); //
         System.out.println("Enter username");
