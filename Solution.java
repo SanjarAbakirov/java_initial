@@ -42,7 +42,11 @@ class Main {
         // void - ничего не возвращает
         // String[] args - аргументы командной строки
         // это все большая кнопка запуска
-        Scanner myObj = new Scanner(System.in); //
+        Scanner myObj = new Scanner(System.in); // Scanner - это как тип инструмента
+        // myObj - имя инструмента
+        // создаем новый - new со своим именем
+        // Scanner() - конструктор - инструкция по сборке
+        // Sysytem.in - входная дверь в команту - откуда читать
         System.out.println("Enter username");
 
         String userName = myObj.nextLine();
