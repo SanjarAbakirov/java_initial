@@ -30,11 +30,11 @@
 // SC O(1)
 
 // --------- input first iteration ---------
-import java.util.Scanner; // склад библиотек
+import java.util.Scanner; // библиотека - специальный сканнер
 
 class Main {
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
+        Scanner myObj = new Scanner(System.in); //
         System.out.println("Enter username");
 
         String userName = myObj.nextLine();
