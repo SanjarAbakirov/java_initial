@@ -67,6 +67,8 @@ class Main {
         // .nextLine() - метод прочитай строку
 
         System.out.println("Username is: " + userName);
-
+        // System - система (весь компьютер)
+        // .out - куда выводить
+        // .println - Напечатай строку (print line)
     }
 }
