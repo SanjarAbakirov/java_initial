@@ -52,6 +52,12 @@ class Main {
         // создай нового рабочего на заводе
 
         System.out.println("Enter username");
+        // System - система (весь компьютер)
+        // .out - куда выводить
+        // .println - Напечатай строку (print line)
+        // Enter username - текст для печати
+
+        // по сути говорим через интерфейс - скажи имя
 
         String userName = myObj.nextLine();
         System.out.println("Username is: " + userName);
