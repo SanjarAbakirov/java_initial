@@ -9,8 +9,10 @@ public class BinaryWorld {
         System.out.println("\nInsert you number from 0 to 9: ");
 
         int number = scanner.nextInt(); // read the number
-
         
+        if (number < 0 || number > 9) { // check out the number is in correct diapasone
+            System.out.println()
+        }
 
         while (true) {
             System.out.println("\nInsert number (or 'exit' for exit): ");
