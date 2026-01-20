@@ -13,7 +13,7 @@ public class BinaryWorld {
         if (number < 0 || number > 9) { // check out the number is in correct diapasone
             System.out.println("Mulfunctions! It must be from 0 to 9!");
         } else {
-            String bcdCode = getBcdCode(decimalDigit);
+            String binaryCode = getBcdCode(number);
         }
 
         while (true) {
