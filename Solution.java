@@ -30,11 +30,13 @@
 // SC O(1)
 
 // --------- input first iteration ---------
-import java.util.Scanner; // библиотека - специальный сканнер
+import java.util.Scanner;
+// библиотека - специальный сканнер
 
 class Main {
-    // class означает директория
+    // class означает директория - Main имя директории
     public static void main(String[] args) {
+        //
         Scanner myObj = new Scanner(System.in); //
         System.out.println("Enter username");
 
