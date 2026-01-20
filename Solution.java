@@ -60,12 +60,13 @@ class Main {
         // по сути говорим через интерфейс - скажи имя
 
         String userName = myObj.nextLine();
-        System.out.println("Username is: " + userName);
         // String - тип строка текста буквы
         // username - переменная
         // = означает - присвой
         // myObj - имя субъекта (наш Scanner)
         // .nextLine() - метод прочитай строку
+
+        System.out.println("Username is: " + userName);
 
     }
 }
