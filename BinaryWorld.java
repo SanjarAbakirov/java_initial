@@ -8,7 +8,7 @@ public class BinaryWorld {
         System.out.println("=".repeat(40));
         System.out.println("\nInsert you number from 0 to 9: ");
 
-        int number = scanner.nextInt(); // read the number
+        int number = scanner.nextInt(); // read the number from (System.in)
         
         if (number < 0 || number > 9) { // check out the number is in correct diapasone
             System.out.println("Mulfunctions! It must be from 0 to 9!");
