@@ -36,7 +36,16 @@ class Solution {
         }
         return -1; // not found
     }
-}
 
-// target=9
-// nums=[-1,0,3,5,9,12]
+    public static void main(String[] args) {
+        Solution s = new Solution();
+
+        // Здесь пишешь свои данные
+        int[] nums = { -9, -1, 0, 3, 5, 7, 8, 12 };
+        int target = 3;
+
+        // Вызываешь метод search
+        int result = s.search(nums, target);
+        System.out.println("Результат: " + result);
+    }
+}
