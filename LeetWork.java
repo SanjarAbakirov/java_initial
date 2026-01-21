@@ -19,7 +19,8 @@
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        
+        nums = [-1,0,3,5,9,12],
+        target = 9
     }
 }
 ;
