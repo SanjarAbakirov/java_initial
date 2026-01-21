@@ -20,8 +20,8 @@ def bubble_sort(arr):
 
 
 numbers = [64, 34, 25, 12, 22, 11, 90]
-print("Before sorting: ", numbers)
-print("After sorting: ", bubble_sort(numbers.copy()))
+# print("Before sorting: ", numbers)
+# print("After sorting: ", bubble_sort(numbers.copy()))
 
 # .copy - is a method in the list. Creates shallow copy of the array to save all changes
 
