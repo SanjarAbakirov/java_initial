@@ -22,7 +22,7 @@ class Solution {
         int right = nums.length - 1; // the right part and end of array
         // nums.length - 1 means the last idx
 
-        while (left <= right) {
+        while (left <= right) { // if left > right - elements ended
             int mid = left + (right - left) / 2; // safely defined middle
             if (nums[mid] == target) {
                 return mid; // we found it
