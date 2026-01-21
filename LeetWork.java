@@ -33,18 +33,7 @@ class Solution {
         }
         return -1; // not found
     }
+}
 
-    target=9
-
-    let right=arr.lenght-1;while(left<=right){
-            let mid = Math.floor(left + right) / 2;
-            if(arr[mid] === target) {
-                return mid
-            }
-            if (arr[mid] < target) {
-                left = mid-1;
-            } else {
-                right = mid - 1;
-            }
-        }return-1;
-}};nums=[-1,0,3,5,9,12]}
+// target=9
+// nums=[-1,0,3,5,9,12]
