@@ -21,6 +21,14 @@ class Solution {
         int left = 0;
         int right = nums.length - 1;
 
+        while (left <= right) {
+            int mid = left + (right - left) / 2; // safely defined middle
+            if (nums[mid] == target) {
+                return mid; // we found it
+            }
+
+        }
+
     }
 
     target=9
