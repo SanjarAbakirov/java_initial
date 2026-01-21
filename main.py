@@ -24,3 +24,21 @@ print("Before sorting: ", numbers)
 print("After sorting: ", bubble_sort(numbers.copy()))
 
 # .copy - is a method in the list. Creates shallow copy of the array to save all changes
+
+
+# ------- Selection Sorting --------
+
+def selection_sort(arr):
+    # at each step lookig for the minimum
+    n = len(arr)
+    for i in range(n):
+        min_index = i  # presume the minimal element is at the position "i"
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+            arr[i], arr[min_index] = arr[min_index, arr[i]]
+    return arr
+
+
+numbers2 = [64, 34, 25, 12, 22, 11, 90]
+print = ("After sorting: ", selection_sort(numbers2.copy()))
