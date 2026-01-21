@@ -33,12 +33,15 @@ def selection_sort(arr):
     n = len(arr)
     for i in range(n):
         min_index = i  # presume the minimal element is at the position "i"
+
+        # раз min_index = i то мы перебираем i + 1 без этого не ошибка но экономит время
         for j in range(i + 1, n):
             if arr[j] < arr[min_index]:
                 min_index = j
-            arr[i], arr[min_index] = arr[min_index, arr[i]]
+        arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 
 
 numbers2 = [64, 34, 25, 12, 22, 11, 90]
-print = ("After sorting: ", selection_sort(numbers2.copy()))
+print("Before sorting: ", numbers2)
+print("After sorting: ", selection_sort(numbers2.copy()))
