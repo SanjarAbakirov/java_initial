@@ -53,7 +53,7 @@ def find_all_triplets_simple(arr):
     count = 0
     print(f"Array from {n} elements")
     print(
-        f"There are checked out triplets: {n} * {n - 1} * {n - 2} = {n * 3} operations")
+        f"There are checked out triplets: {n - 2} * {n - 1} * {n} -> {n * 3} operations")
     for i in range(n):  # there are n iterations
         for j in range(n):  # there are n*n iterations
             for k in range(n):  # n * n * n iterations
@@ -61,3 +61,7 @@ def find_all_triplets_simple(arr):
                     count += 1
     print(f"There were defined: {count}")
     return count
+
+
+numbers = [64, 34, 25, 12, 22, 11, 90]
+print(find_all_triplets_simple(numbers))
