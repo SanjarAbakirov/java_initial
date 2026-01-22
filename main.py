@@ -60,12 +60,13 @@ def find_all_triplets_simple(arr):
     for i in range(n - 2):  # there are n iterations
         for j in range(i + 1, n - 1):  # there are n*n iterations
             for k in range(j + 1, n):  # n * n * n iterations
-                if i < j < k:  # check out different indexes
-                    # C(n, 3) = n!/(3!(n-3)!)
-                    count += 1
+                # C(n, 3) = n!/(3!(n-3)!)
+                count += 1
+
     print(f"There were defined: {count}")
+    print(f"Quantity operations (iterations): {count} (instead {n ** 3})")
     return count
 
 
 numbers = [2, 4, 5, 6, 7, 8, 9]
-print(find_all_triplets_simple(numbers))
+print("The output: ", find_all_triplets_simple(numbers))
