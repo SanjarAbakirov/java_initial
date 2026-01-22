@@ -54,7 +54,7 @@ def find_all_triplets_simple(arr):
 
     print(f"Array from {n} elements")
     print(
-        f"There are all potential triplets: C({n}, 3) = {n} * (n - 1) * (n - 2)s//6 operations")
+        f"There are all potential triplets: C({n}, 3) = {n} * (n - 1) * (n - 2)//6 operations")
 
     # we generate necessary combinations
     for i in range(n - 2):  # there are n iterations
