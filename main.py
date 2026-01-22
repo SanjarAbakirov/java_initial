@@ -51,13 +51,15 @@ def selection_sort(arr):
 def find_all_triplets_simple(arr):
     n = len(arr)
     count = 0
+
     print(f"Array from {n} elements")
     print(
-        f"There are checked out triplets: {n * 3} operations")
+        f"There are checked out triplets: {n ^ 3} operations")
     for i in range(n):  # there are n iterations
         for j in range(n):  # there are n*n iterations
             for k in range(n):  # n * n * n iterations
                 if i < j < k:  # check out different indexes
+                    # C(n, 3) = n!/(3!(n-3)!)
                     count += 1
     print(f"There were defined: {count}")
     return count
