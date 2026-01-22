@@ -41,8 +41,9 @@ class Solution {
         Solution s = new Solution();
 
         // Здесь пишешь свои данные
-        int[] nums = { -9, -1, 0, 3, 5, 7, 8, 12 };
-        int target = 3;
+        int[] nums = { -1, 0, 3, 5, 9, 12 };
+
+        int target = 2;
 
         // Вызываешь метод search
         int result = s.search(nums, target);

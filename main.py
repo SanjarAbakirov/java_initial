@@ -42,6 +42,22 @@ def selection_sort(arr):
     return arr
 
 
-numbers2 = [64, 34, 25, 12, 22, 11, 90]
-print("Before sorting: ", numbers2)
-print("After sorting: ", selection_sort(numbers2.copy()))
+# numbers2 = [64, 34, 25, 12, 22, 11, 90]
+# print("Before sorting: ", numbers2)
+# print("After sorting: ", selection_sort(numbers2.copy()))
+
+
+# -------- cube complexity--------------
+def find_all_triplets_simple(arr):
+    n = len(arr)
+    count = 0
+    print(f"Array from {n} elements")
+    print(
+        f"There are checked out triplets: {n} * {n - 1} * {n - 2} = {n * 3} operations")
+    for i in range(n):  # there are n iterations
+        for j in range(n):  # there are n*n iterations
+            for k in range(n):  # n * n * n iterations
+                if i < j < k:  # check out different indexes
+                    count += 1
+    print(f"There were defined: {count}")
+    return count
