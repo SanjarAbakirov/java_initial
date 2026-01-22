@@ -43,7 +43,7 @@ class Solution {
         // Здесь пишешь свои данные
         int[] nums = { -1, 0, 3, 5, 9, 12 };
 
-        int target = 2;
+        int target = 9;
 
         // Вызываешь метод search
         int result = s.search(nums, target);
