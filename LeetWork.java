@@ -16,61 +16,67 @@
 // Output: -1
 // Explanation: 2 does not exist in nums so return -1
 
-//------------------------- 
+// -------------------------
 
 // class Solution {
-//     public int search(int[] nums, int target) {
-//         int left = 0; // the left part of research - from 0 index
-//         int right = nums.length - 1; // the right part and end of array
-//         // nums.length - 1 means the last idx
+// public int search(int[] nums, int target) {
+// int left = 0; // the left part of research - from 0 index
+// int right = nums.length - 1; // the right part and end of array
+// // nums.length - 1 means the last idx
 
-//         while (left <= right) { // if left > right - elements ended
-//             int mid = left + (right - left) / 2; // safely defined middle
-//             // left = 0, right = 5 (Example)
-//             // mid = 0 + (5 - 0) / 2 = 2 (Example)
-//             if (nums[mid] == target) {
-//                 return mid; // we found it
-//             } else if (nums[mid] < target) {
-//                 left = mid + 1; // searching in the right part
-//             } else {
-//                 right = mid - 1; // searching in the left part
-//             }
-//         }
-//         return -1; // not found
-//     }
+// while (left <= right) { // if left > right - elements ended
+// int mid = left + (right - left) / 2; // safely defined middle
+// // left = 0, right = 5 (Example)
+// // mid = 0 + (5 - 0) / 2 = 2 (Example)
+// if (nums[mid] == target) {
+// return mid; // we found it
+// } else if (nums[mid] < target) {
+// left = mid + 1; // searching in the right part
+// } else {
+// right = mid - 1; // searching in the left part
+// }
+// }
+// return -1; // not found
+// }
 // ---------------
 
+// class Solution {
+// public int search(int[] nums, int target) {
+// int start = 0;
+// int end = nums.length - 1;
+
+// while (start <= end) {
+// int mid = start + (end - start) / 2;
+// if (nums[mid] == target) {
+// return mid;
+// } else if (nums[mid] < target) {
+// start = mid + 1;
+// } else if (nums[mid] > target) {
+// end = mid - 1;
+// }
+// }
+// return -1;
+// }
+
+// // -------
+// public static void main(String[] args) {
+// Solution s = new Solution();
+
+// // Здесь пишешь свои данные
+// int[] nums = { -1, 0, 3, 5, 9, 12 };
+
+// int target = 2;
+
+// // Вызываешь метод search
+// int result = s.search(nums, target);
+// System.out.println("Результат: " + result);
+// }
+// }
+
+// ------ 242. Valid Anagram-------------
+
 class Solution {
-    public int search(int[] nums, int target) {
-        int start = 0;
-        int end = nums.length - 1;
+    public boolean isAnagram(String s, String t) {
 
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            if (nums[mid] == target) {
-                return mid;
-            } else if (nums[mid] < target) {
-                start = mid + 1;
-            } else if (nums[mid] > target) {
-                end = mid - 1;
-            }
-        }
-        return -1;
-    }
-
-    // -------
-    public static void main(String[] args) {
-        Solution s = new Solution();
-
-        // Здесь пишешь свои данные
-        int[] nums = { -1, 0, 3, 5, 9, 12 };
-
-        int target = 2;
-
-        // Вызываешь метод search
-        int result = s.search(nums, target);
-        System.out.println("Результат: " + result);
     }
 }
-
-// dop reshenie - razberem
