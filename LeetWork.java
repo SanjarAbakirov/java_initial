@@ -81,5 +81,8 @@ class Solution {
             System.out.println("One of the strings is equalls null");
             return;
         }
+
+        int len1 = s.length();
+        int len2 = t.length();
     }
 }
