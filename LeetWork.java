@@ -73,12 +73,11 @@
 // }
 // }
 
-// ------ 242. Valid Anagram-------------
-
+// ------ 242. Valid Anagram------------- 
 import java.util.Arrays;
 
 class Solution {
-    public boolean isAnagram(String s, String t) {
+    public class TheAnagram {
 
     }
 }
