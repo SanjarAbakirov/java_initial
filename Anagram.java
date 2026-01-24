@@ -24,5 +24,4 @@ public class Anagram {
         Arrays.sort(tLetter);
         return Arrays.equals(sLetter, tLetter);
     }
-
 }
