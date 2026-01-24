@@ -19,6 +19,9 @@ public class Anagram {
         }
         char[] sLetter = s.toCharArray();
         char[] tLetter = t.toCharArray();
+
+        Arrays.sort(sLetter);
+        Arrays.sort(tLetter);
     }
 
 }
