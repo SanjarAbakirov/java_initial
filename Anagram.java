@@ -14,6 +14,11 @@ public class Anagram {
     public static boolean isAnagram(String s, String t) {
         s = s.replace(" ", "").toLowerCase();
         t = t.replace(" ", "").toLowerCase();
+        if (s.length() != t.length()) {
+            return false;
+        }
+        char[] sLetter = s.toCharArray();
+        char[] tLetter = t.toCharArray();
     }
 
 }
