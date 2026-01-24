@@ -18,25 +18,26 @@
 
 // -------------------------
 
-class Solution {
+class LeetWork {
     public int search(int[] nums, int target) {
-    int left = 0; // the left part of research - from 0 index
-    int right = nums.length - 1; // the right part and end of array
-    // nums.length - 1 means the last idx
+        int left = 0; // the left part of research - from 0 index
+        int right = nums.length - 1; // the right part and end of array
+        // nums.length - 1 means the last idx
 
-    while (left <= right) { // if left > right - elements ended
-        int mid = left + (right - left) / 2; // safely defined middle
-        // left = 0, right = 5 (Example)
-        // mid = 0 + (5 - 0) / 2 = 2 (Example)
-        if (nums[mid] == target) {
-            return mid; // we found it
-        } else if (nums[mid] < target) {
-            left = mid + 1; // searching in the right part
-        } else {
-            right = mid - 1; // searching in the left part
-        }   
-    }
+        while (left <= right) { // if left > right - elements ended
+            int mid = left + (right - left) / 2; // safely defined middle
+            // left = 0, right = 5 (Example)
+            // mid = 0 + (5 - 0) / 2 = 2 (Example)
+            if (nums[mid] == target) {
+                return mid; // we found it
+            } else if (nums[mid] < target) {
+                left = mid + 1; // searching in the right part
+            } else {
+                right = mid - 1; // searching in the left part
+            }
+        }
         return -1; // not found
+    }
 }
 // ---------------
 
