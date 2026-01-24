@@ -2,34 +2,32 @@ import java.util.Scanner; // library from box - util.Scanner to understand
 // what we input
 
 public class BinaryWorld {
-public static void main(String[] args) { // main room where everething
-arrives
-Scanner scanner = new Scanner(System.in); // system code - для чтения ввода
-System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз
-"="
-System.out.println(" Convert to binary code ");
-System.out.println("=".repeat(40));
-System.out.println("\nInsert you number from 0 to 9: ");
+    public static void main(String[] args) { // main room where everething arrives
+        Scanner scanner = new Scanner(System.in); // system code - для чтения ввода
+        System.out.println("=".repeat(40));// тут .repeat(40) просит написать 40 раз "="
+        System.out.println(" Convert to binary code ");
+        System.out.println("=".repeat(40));
+        System.out.println("\nInsert you number from 0 to 9: ");
 
-int number = scanner.nextInt(); // read the number from (System.in) -
-integer, number - scanner.nextInt - please
-// receive integer
+        int number = scanner.nextInt(); // read the number from (System.in) -
+        // integer, number - scanner.nextInt - please
+        // receive integer
 
-if (number < 0 || number > 9) { // check out the number is in correct
-diapasone
-System.out.println("Mulfunctions! It must be from 0 to 9!");
-} else {
-String binaryCode = getBcdCode(number); // convert to binary code. takes
-values from binary code according
-// to number
-System.out.println("\n" + "-".repeat(30));
-System.out.println("Number: " + number);
-System.out.println("Binary code (BCD): " + binaryCode);
-System.out.println("-".repeat(30));
-}
-// closing scanner
-scanner.close();
-}
+        if (number < 0 || number > 9) { // check out the number is in correct
+            // diapasone
+            System.out.println("Mulfunctions! It must be from 0 to 9!");
+        } else {
+            String binaryCode = getBcdCode(number); // convert to binary code. takes
+            // values from binary code according
+            // to number
+            System.out.println("\n" + "-".repeat(30));
+            System.out.println("Number: " + number);
+            System.out.println("Binary code (BCD): " + binaryCode);
+            System.out.println("-".repeat(30));
+        }
+        // closing scanner
+        scanner.close();
+    }
 
     public static String getBcdCode(int digit) {
         return switch (digit) {
