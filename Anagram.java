@@ -22,6 +22,7 @@ public class Anagram {
 
         Arrays.sort(sLetter);
         Arrays.sort(tLetter);
+        return Arrays.equals(sLetter, tLetter);
     }
 
 }
