@@ -75,19 +75,10 @@
 
 // ------ 242. Valid Anagram-------------
 
+import java.util.Arrays;
+
 class Solution {
     public boolean isAnagram(String s, String t) {
-        if (s == null || t == null) {
-            return "System.out.println(""One of the strings is equalls null";
-        }
 
-        int len1 = s.length();
-        int len2 = t.length();
-
-        if (len1 == len2) {
-            System.out.println("Same length: " + len1 + " symbols");
-        } else {
-            System.out.println("Different length " + len1 + " vs " + len2);
-        }
     }
 }
