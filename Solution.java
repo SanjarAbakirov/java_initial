@@ -106,9 +106,11 @@ class Solution {
         int[] currentFreq = new int[26]; // for window currentt s
         // it counts how many wich letters are there in array
 
-        // Fill in frequency array for p and window currentt s
+        // Step 5. Fill in frequency array for p and window currentt s
         for (int i = 0; i < m; i++) {
-
+            // for p string
+            char pChar = p.charAt(i);
+            // Transform letters to idx
         }
 
     }
