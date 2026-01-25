@@ -127,5 +127,14 @@ class Solution {
             // if it coincide - than the first window is anagram
             anagramIndices.add(0); // adding the index
         }
+        // Step 7. Sliding window on the string s
+        // starting from the second window (I = 1) before the last possible
+        for (int start = 1; start <= n - m; start++) {
+            // the condition i < = n - m - means that the last window starts from the idx
+            // n-m
+            // Ex. s = "hello" (n = 5), p = "||" (m = 2)
+            // so than the ;ast window will be started from the idx 5 - 2 = 3
+
+        }
     }
 }
