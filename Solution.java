@@ -97,6 +97,12 @@ class Solution {
             return anagramIndices;
         }
         // frequency arrays -> a-z En 26 letters
+        // index 0 -> 'a', index 1 -> 'b', ..., index 25 -> 'z'
+        int[] targetFreq = new int[26]; // for p string - a-z 26
+        int[] currentFreq = new int[26]; // for window currentt s
+        // it counts how many wich letters are there in array
+
+        //
 
     }
 }
