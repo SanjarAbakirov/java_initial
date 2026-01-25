@@ -77,3 +77,15 @@
 // // }
 
 // -------- 438. Find All Anagrams in a String --------
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        // list for keeping results of search
+        // ArrayList is dynamic array - starches
+        List<Integer> anaIndices = new ArrayList<>();
+
+    }
+}
