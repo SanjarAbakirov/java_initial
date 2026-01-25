@@ -110,8 +110,17 @@ class Solution {
         for (int i = 0; i < m; i++) {
             // for p string
             char pChar = p.charAt(i);
-            // Transform letters to idx
-        }
+            // Transform letters to idx: "a" -> 0, "b" -> 1. etc.
+            int pIndex = pChar - 'a';
+            targetFreq[pIndex]++; // itterate counter of the letter
 
+            // for the first window of the s string
+            char sChar = s.chartAt(i);
+            int sIndex = sChar - 'a';
+            currentFreq[sIndex]++;
+            // so here we fill in the window
+
+        }
+        // Step 6.
     }
 }
