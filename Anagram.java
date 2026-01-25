@@ -1,4 +1,12 @@
+
+// ------ 242. Valid Anagram------------- 
 import java.util.Arrays;
+
+class Solution {
+    public class TheAnagram {
+
+    }
+}
 
 public class Anagram {
     public static void CompareAnagram(String[] args) {
