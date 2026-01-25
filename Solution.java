@@ -96,13 +96,20 @@ class Solution {
         if (s.isEmpty() || p.isEmpty()) {
             return anagramIndices;
         }
-        // frequency arrays -> a-z En 26 letters
+        // Step 3. Create length of string arrays for usebility
+        int n = s.length(); // length of s
+        int m = p.length(); // length of p
+
+        // Step 4. Frequency arrays -> a-z En 26 letters
         // index 0 -> 'a', index 1 -> 'b', ..., index 25 -> 'z'
         int[] targetFreq = new int[26]; // for p string - a-z 26
         int[] currentFreq = new int[26]; // for window currentt s
         // it counts how many wich letters are there in array
 
-        //
+        // Fill in frequency array for p and window currentt s
+        for (int i = 0; i < m; i++) {
+
+        }
 
     }
 }
