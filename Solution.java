@@ -115,7 +115,7 @@ class Solution {
             targetFreq[pIndex]++; // itterate counter of the letter
 
             // for the first window of the s string
-            char sChar = s.chartAt(i);
+            char sChar = s.charAt(i);
             int sIndex = sChar - 'a';
             currentFreq[sIndex]++;
             // so here we fill in the window
@@ -124,7 +124,8 @@ class Solution {
         // Step 6. Check out first window
         // method Arrays.euals compares two arrays by each element
         if (Arrays.equals(targetFreq, currentFreq)) {
-
+            // if it coincide - than the first window is anagram
+            anagramIndices.add(0); // adding the index
         }
     }
 }
