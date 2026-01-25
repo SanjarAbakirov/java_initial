@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Anagram {
     public static void main(String[] args) {
-        String s = "Kot";
-        String t = "Tok";
+        String s = "silence";
+        String t = "listen;
         if (isAnagram(s, t)) {
             System.out.println("It is anargam");
         } else {
