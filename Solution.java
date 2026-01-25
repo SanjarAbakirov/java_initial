@@ -83,9 +83,15 @@ import java.util.List;
 
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
-        // list for keeping results of search
+        // Step 1. The list for keeping results of search
         // ArrayList is dynamic array - starches
-        List<Integer> anaIndices = new ArrayList<>();
+        List<Integer> anagramIndices = new ArrayList<>();
+
+        // Step 2. Check out edge cases like s > p -> false
+        if (p.length() > s.length()) {
+            // return empty array
+            return anagramIndices;
+        }
 
     }
 }
