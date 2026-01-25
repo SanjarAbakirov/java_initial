@@ -152,7 +152,8 @@ class Solution {
                 // if yes, we add idx of the start of this window
                 anagramIndices.add(start);
             }
-
         }
+        // Step 8. Return the result
+        return anagramIndices;
     }
 }
