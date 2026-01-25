@@ -134,7 +134,8 @@ class Solution {
             // n-m
             // Ex. s = "hello" (n = 5), p = "||" (m = 2)
             // so than the ;ast window will be started from the idx 5 - 2 = 3
-
+            // when the window moves: 1) one symbole moves out to the left (idx start - 1)
+            // 2) adds a new one from the right side (idx strat + m - 1)
         }
     }
 }
