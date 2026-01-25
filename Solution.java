@@ -121,6 +121,10 @@ class Solution {
             // so here we fill in the window
 
         }
-        // Step 6.
+        // Step 6. Check out first window
+        // method Arrays.euals compares two arrays by each element
+        if (Arrays.equals(targetFreq, currentFreq)) {
+
+        }
     }
 }
