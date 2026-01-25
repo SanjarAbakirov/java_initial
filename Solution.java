@@ -137,10 +137,21 @@ class Solution {
             // when the window moves: 1) one symbole moves out to the left (idx start - 1)
             // 2) adds a new one from the right side (idx strat + m - 1)
 
-            // Than we delet a symbol that moves out from the window
+            // Than we delete a symbol that moves out from the window
             char leavingChar = s.charAt(start - 1);
-            int leavingIndex = leavingChar - "a";
+            int leavingIndex = leavingChar - 'a';
             currentFreq[leavingIndex]--; // decreasig the counter
+
+            // add symbol, from thw window (that came)
+            char enteringChar = s.charAt(start + m - 1);
+            int enteringIndex = enteringChar - 'a';
+            currentFreq[enteringIndex]++; // increase counter
+
+            // check out is new window is anagramm
+            if (Arrays.equals(targetFreq, currentFreq)) {
+                // if yes, we add idx of the start of this window
+                anagramIndices.add(start);
+            }
 
         }
     }
