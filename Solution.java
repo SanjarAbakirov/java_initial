@@ -92,6 +92,11 @@ class Solution {
             // return empty array
             return anagramIndices;
         }
+        // cheking out empty string
+        if (s.isEmpty() || p.isEmpty()) {
+            return anagramIndices;
+        }
+        // frequency arrays -> a-z En 26 letters
 
     }
 }
