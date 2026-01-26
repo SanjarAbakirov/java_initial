@@ -18,6 +18,7 @@ class LeetWork {
 
     public static boolean containsDuplicate(int[] nums) {
         // Hashset - unique elements collections
+        // edge case
         if (nums == null || nums.length <= 1) {
             return false;
         }
