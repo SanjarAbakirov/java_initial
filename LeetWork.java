@@ -17,6 +17,10 @@ class LeetWork {
 
     public static boolean containsDuplicate(int[] nums) {
         // Hashset - unique elements collections
+        if (nums == null || nums.length <= 1) {
+            return false;
+        }
+
         Set<Integer> seen = new HashSet<>();
 
         for (int num : nums) {
