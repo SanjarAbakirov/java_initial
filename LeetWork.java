@@ -30,8 +30,9 @@ class LeetWork {
         // HashSet - is a hash table
         // <>() - is a constructor
 
-        for (int num : nums) {
+        for (int num : nums) { // for each int the num in array
             // if there is a num in set - duplicate
+            // create a variable - int num -> : means "inside"
             if (seen.contains(num)) {
                 return true;
             }
