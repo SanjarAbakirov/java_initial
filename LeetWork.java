@@ -9,8 +9,12 @@
 
 import java.util.*;
 
-class LeetWork {
-    public static boolean containsDuplicate(int[] nums) {
+public class LeetWork {
+    public static void main(int[] nums) {
+        int[] nums1 = { 1, 2, 3, 4, 2 };
+    }
+
+    public boolean containsDuplicate(int[] nums) {
         // Hashset - unique elements
         Set<Integer> seen = new HashSet<>();
 
@@ -23,9 +27,4 @@ class LeetWork {
 
     }
 
-    // public class FindDuplicates {
-    // int[] nums = { 1, 2, 3, 4, 2 };System.out.println("True: "+
-
-    // containsDuplicate(nums));
-    // }
 }
