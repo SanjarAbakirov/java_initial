@@ -24,7 +24,8 @@ class LeetWork {
         }
 
         Set<Integer> seen = new HashSet<>();
-
+        // Set<Integer> - multiplicity of int -> Set - plurality
+        //
         for (int num : nums) {
             // if there is a num in set - duplicate
             if (seen.contains(num)) {
