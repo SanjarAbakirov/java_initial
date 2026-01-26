@@ -6,3 +6,9 @@
 // input nums = [1, 2, 3, 4, 1]
 // Output: true
 // indices 0 and 3
+
+class LeetWork {
+    public boolean containsDuplicate(int[] nums) {
+
+    }
+}
