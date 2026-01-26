@@ -25,7 +25,11 @@ class LeetWork {
 
         Set<Integer> seen = new HashSet<>();
         // Set<Integer> - multiplicity of int -> Set - plurality
-        //
+        // < > - it is generic - Integer - class cover of int
+        // seen - variable - that have seen and collect number we have already passed
+        // HashSet - is a hash table
+        // <>() - is a constructor
+
         for (int num : nums) {
             // if there is a num in set - duplicate
             if (seen.contains(num)) {
