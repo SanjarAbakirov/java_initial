@@ -6,11 +6,13 @@
 // Output: true
 // indices 0 and 3
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class LeetWork {
-    public static void main(int[] nums) {
-        int[] nums1 = { 1, 2, 3, 4, 2 };
+class Solution {
+    public List<Integer> findAnagrams(int[] nums) {
+        nums={1,2,3,4,2};
     }
 
     public static boolean containsDuplicate(int[] nums) {
