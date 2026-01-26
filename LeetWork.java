@@ -8,14 +8,19 @@
 // indices 0 and 3
 
 class LeetWork {
+    public static boolean containsDuplicate(int[] nums) {
+        // Hashset - unique elements
+        Set<Integer> seen = new HashSet<>();
 
-    public boolean containsDuplicate(int[] nums) {
+        for (int num : nums) {
+            // if there is a num in set - duplicate
+        }
 
     }
 
-    public class FindDuplicates {
-        int[] nums = { 1, 2, 3, 4, 2 };System.out.println("True: "+
+    // public class FindDuplicates {
+    // int[] nums = { 1, 2, 3, 4, 2 };System.out.println("True: "+
 
-        containsDuplicate(nums));
-    }
+    // containsDuplicate(nums));
+    // }
 }
