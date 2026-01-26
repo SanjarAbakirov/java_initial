@@ -7,6 +7,8 @@
 // Output: true
 // indices 0 and 3
 
+import java.util.*;
+
 class LeetWork {
     public static boolean containsDuplicate(int[] nums) {
         // Hashset - unique elements
@@ -14,6 +16,9 @@ class LeetWork {
 
         for (int num : nums) {
             // if there is a num in set - duplicate
+            if (seen.contains(num)) {
+                return true;
+            }
         }
 
     }
