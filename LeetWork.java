@@ -7,9 +7,10 @@
 // indices 0 and 3
 
 import java.util.*;
+// * - from util box, needed for hashset and set
 
 class LeetWork {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // main is needed for start
         int[] nums1 = { 1, 2, 3, 4, 2 };
         boolean result = containsDuplicate(nums1);
         System.out.println("There is a duplicate: " + result);
