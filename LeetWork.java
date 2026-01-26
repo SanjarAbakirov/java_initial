@@ -8,11 +8,14 @@
 // indices 0 and 3
 
 class LeetWork {
-    public class FindDuplicates {
-        int[] nums = { 1, 2, 3, 4, 2 };
-    }
 
     public boolean containsDuplicate(int[] nums) {
 
+    }
+
+    public class FindDuplicates {
+        int[] nums = { 1, 2, 3, 4, 2 };System.out.println("True: "+
+
+        containsDuplicate(nums));
     }
 }
