@@ -11,6 +11,8 @@ import java.util.*;
 class LeetWork {
     public static void main(String[] args) {
         int[] nums1 = { 1, 2, 3, 4, 2 };
+        boolean result = containsDuplicate(nums1);
+        System.out.println("There is a duplicate: " + result);
     }
 
     public static boolean containsDuplicate(int[] nums) {
