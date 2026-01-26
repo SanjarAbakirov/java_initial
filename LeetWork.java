@@ -33,7 +33,9 @@ class LeetWork {
         for (int num : nums) { // for each int the num in array
             // if there is a num in set - duplicate
             // create a variable - int num -> : means "inside"
-            if (seen.contains(num)) {
+            if (seen.contains(num)) { // check out and addition to set
+                // seen.contains(num) - if arrays consists int num
+                // contains() returns true if such int exists
                 return true;
             }
             seen.add(num);
