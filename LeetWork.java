@@ -14,8 +14,8 @@ public class LeetWork {
         int[] nums1 = { 1, 2, 3, 4, 2 };
     }
 
-    public boolean containsDuplicate(int[] nums) {
-        // Hashset - unique elements
+    public static boolean containsDuplicate(int[] nums) {
+        // Hashset - unique elements collections
         Set<Integer> seen = new HashSet<>();
 
         for (int num : nums) {
@@ -23,8 +23,8 @@ public class LeetWork {
             if (seen.contains(num)) {
                 return true;
             }
+            seen.add(num);
         }
-
+        return false;
     }
-
 }
