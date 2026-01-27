@@ -21,8 +21,10 @@ public class MissingNumber {
 
         // Tests
         int[] test1 = { 3, 0, 1 };
-        System.out.println("Test 1: " + solver.missingNumber(test1)); // 2
-        int[] test2 = { 0, 1 };
-        System.out.println("Test 1: " + solver.missingNumber(test2));
+        System.out.println("Test 1: " + solver.missingNumber(test1)); // 3
+        int[] test2 = { 0, 2, 1, 4 };
+        System.out.println("Test 2: " + solver.missingNumber(test2)); // 2
+        int[] test3 = { 9, 6, 4, 2, 3, 5, 7, 0, 1 };
+        System.out.println("Test 3: " + solver.missingNumber(test3)); // 8
     }
 }
