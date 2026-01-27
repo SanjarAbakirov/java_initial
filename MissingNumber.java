@@ -15,4 +15,14 @@ public class MissingNumber {
         // finally it will be the last num
         return result;
     }
+
+    public static void main(String[] args) {
+        MissingNumber solver = new MissingNumber();
+
+        // Tests
+        int[] test1 = { 3, 0, 1 };
+        System.out.println("Test 1: " + solver.missingNumber(test1)); // 2
+        int[] test2 = { 0, 1 };
+        System.out.println("Test 1: " + solver.missingNumber(test2));
+    }
 }
