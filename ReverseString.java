@@ -17,4 +17,27 @@ class ReverseString {
             right--;
         }
     }
+
+    public static void main(String[] args) {
+        ReverseString reverser = new ReverseString();
+        
+        // Тест 1
+        char[] test1 = {'h','e','l','l','o'};
+        System.out.println("До: " + new String(test1));
+        reverser.reverseString(test1);
+        System.out.println("После: " + new String(test1));
+        
+        // Тест 2
+        char[] test2 = {'H','a','n','n','a','h'};
+        System.out.println("\nДо: " + new String(test2));
+        reverser.reverseString(test2);
+        System.out.println("После: " + new String(test2));
+        
+        // Тест 3: Пустая строка
+        char[] test3 = {};
+        System.out.println("\nПустой массив:");
+        reverser.reverseString(test3);
+        System.out.println("Длина: " + test3.length);
+        }
+    }
 }
