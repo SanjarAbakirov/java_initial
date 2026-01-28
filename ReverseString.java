@@ -9,8 +9,12 @@ class ReverseString {
 
         while (left < right) { // меняем естами символы пока не указатели не встретятся
             char temp = s[left]; // сохраняем левый символ во временную переменную
-            s[left] = s[right]; // переносим левый символ в правый символ
-            s[right] = temp;
+            s[left] = s[right]; // переносим right символ to the place of the left символ
+            s[right] = temp; // Переносим сохранённый левый символ на место правогo
+
+            // move definderf to the center
+            left++;
+            right--;
         }
     }
 }
