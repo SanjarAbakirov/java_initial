@@ -4,6 +4,7 @@
 
 class ReverseString {
     public void reverseString(char[] s) {
-        int left = 0;
+        int left = 0; // begining of the arr
+        int right = s.length - 1; // emd of the arr
     }
 }
