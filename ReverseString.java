@@ -6,5 +6,9 @@ class ReverseString {
     public void reverseString(char[] s) {
         int left = 0; // begining of the arr
         int right = s.length - 1; // emd of the arr
+
+        while (left < right) { // меняем естами символы пока не указатели не встретятся
+            char temp = s[left]; // сохраняем левый символ во временную переменную
+        }
     }
 }
