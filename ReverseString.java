@@ -4,7 +4,6 @@
 
 class ReverseString {
     public void reverseString(char[] s) {
-        arr = ["f", "i", "z", "a"];
-        // return s;
+        int left = 0;
     }
 }
