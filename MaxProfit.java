@@ -17,7 +17,6 @@ public class MaxProfit {
     // method for testing
     public static void main(String[] args) {
         Solution solution = new Solution();
-        // test data
         int[] prices = { 7, 1, 5, 9, 3, 6, 4 };
         int result = solution.maxProfit(prices);
         System.out.println("maximum profit: " + result);
