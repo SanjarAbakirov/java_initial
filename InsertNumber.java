@@ -14,27 +14,21 @@ public class InsertNumber {
         // void - ничего не возвращает
         // String[] args - аргументы командной строки
         Scanner myObj = new Scanner(System.in); // Scanner - это как тип инструмента
-        // myObj - имя инструмента
+        // myObj - имя инструмента наш Scanner)
+        // .nextLine() - метод прочитай строку
         // Scanner() - конструктор - инструкция по сборке
         // Sysytem.in - входная дверь в команту - откуда читать
         // я говорю - Сканнер мой объект равно новый Сканер в нем
+        System.out.println("Enter username");
+        String userName = myObj.nextLine();
+        System.out.println("Username is: " + userName);
+
+        // myObj - имя субъекта (
+
     }
 
 }
 
-// системный вход
-// создай нового
-// рабочего на заводе
-
-// System.out.println("Enter username");
-
-// String userName = myObj.nextLine();
-// // myObj - имя субъекта (наш Scanner)
-// // .nextLine() - метод прочитай строку
-
-// System.out.println("Username is: " + userName);
-// // System - система (весь компьютер)
-// // .out - куда выводить
-// // .println - Напечатай строку (print line)
-// }
-// }
+// System - система (весь компьютер)
+// .out - куда выводить
+// .println - Напечатай строку (print line)
