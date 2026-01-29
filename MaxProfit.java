@@ -69,12 +69,13 @@ class Solution {
         for (int i = 1; i < n; i++) {
             // sell day, when we buy at day 'x' that 'x' < i
             int profit = prices[i] - min_price;
-            if (prices[i] < min_price) {
-                min_price = prices[i];
+
+            if (profit > max_profit) {
+                max_profit = profit;
             }
 
-            else if (prices[i] - min_price > max_profit) {
-                max_profit = prices[i] - min_price;
+            if (prices[i] < min_price) {
+                min_price = prices[i];
             }
         }
         return max_profit;
