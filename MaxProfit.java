@@ -1,4 +1,4 @@
-// ---------- 121 Max profit -------------
+// ---------- 121 Max profit -----O(n^2)--------
 // public class MaxProfit {
 //     public int maxProfit(int[] prices) {
 //         int n = prices.length;
@@ -48,7 +48,7 @@ class Solution {
 
     // method for testing
     public static void main(String[] args) {
-        MaxProfit maxProfit = new MaxProfit();
+        Solution maxProfit = new Solution();
 
         int[] prices = { 7, 1, 5, 3, 6, 4 };
         int result = maxProfit.maxProfit(prices);
