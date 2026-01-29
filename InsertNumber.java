@@ -22,13 +22,9 @@ public class InsertNumber {
         System.out.println("Enter username");
         String userName = myObj.nextLine();
         System.out.println("Username is: " + userName);
-
-        // myObj - имя субъекта (
-
+        // System - система (весь компьютер)
+        // .out - куда выводить
+        // .println - Напечатай строку (print line)
     }
 
 }
-
-// System - система (весь компьютер)
-// .out - куда выводить
-// .println - Напечатай строку (print line)
