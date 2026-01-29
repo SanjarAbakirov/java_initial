@@ -16,10 +16,10 @@ public class MaxProfit {
 
     // method for testing
     public static void main(String[] args) {
-        MaxProfit solution = new MaxProfit();
+        MaxProfit maxProfit = new MaxProfit();
 
-        int[] prices = { 7, 1, 5, 9, 3, 6, 4 };
-        int result = solution.maxProfit(prices);
+        int[] prices = { 7, 1, 5, 9, 3, 6, 4, 2, 8 };
+        int result = maxProfit.maxProfit(prices);
         System.out.println("maximum profit: " + result);
     }
 }
