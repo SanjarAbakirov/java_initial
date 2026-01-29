@@ -20,7 +20,9 @@ public class InsertNumber {
         // Sysytem.in - входная дверь в команту - откуда читать
         // я говорю - Сканнер мой объект равно новый Сканер в нем
         System.out.println("Enter username");
+
         String userName = myObj.nextLine();
+
         System.out.println("Username is: " + userName);
         // System - система (весь компьютер)
         // .out - куда выводить
