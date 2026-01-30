@@ -7,11 +7,21 @@ public class SingleNumber {
         return result;
     }
 
-    public static void main(int[] nums) {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
 
-        int[] nums1 = { 1, 2, 3, 4, 2, 1, 3 };
+        // Тесты
+        int[] test1 = { 2, 2, 1 };
+        System.out.println("Test 1: " + solution.singleNumber(test1)); // 1
 
-        // System.out.println("maximum profit: " + result);
+        int[] test2 = { 4, 1, 2, 1, 2 };
+        System.out.println("Test 2: " + solution.singleNumber(test2)); // 4
+
+        int[] test3 = { 1 };
+        System.out.println("Test 3: " + solution.singleNumber(test3)); // 1
+
+        int[] test4 = { 7, 3, 5, 3, 7 };
+        System.out.println("Test 4: " + solution.singleNumber(test4)); // 5
     }
 
 }
