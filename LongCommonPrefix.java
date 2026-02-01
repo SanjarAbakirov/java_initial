@@ -12,6 +12,8 @@ public class LongCommonPrefix {
         StringBuilder ans = new StringBuilder();
 
         // The first string like example
+        // the cicle works inside of the StringBuilder that is like array with strings
+
         for (int i = 0; i < strs[0].length(); i++) {
             // length() - write for strings
             // strs[0].length() - research length of words - elements
