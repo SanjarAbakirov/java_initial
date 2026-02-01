@@ -12,11 +12,9 @@ public class LongCommonPrefix {
         StringBuilder ans = new StringBuilder();
 
         // The first string like example
-        for (int i = 0; i < srts[0].length(); i++) {
-            char (int j = 1; j < strs.length; j++) {
-                // if the current strs shorter - than doesn work
-                if (i >= strs[j].length() || c !=)
-            }
+        for (int i = 0; i < strs[0].length(); i++) {
+            char c = strs[0].charAt(i);
+            boolean allEqual = true;
 
         }
 
