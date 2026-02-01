@@ -25,6 +25,7 @@ public class LongCommonPrefix {
 
             for (int j = 1; j < strs.length; j++) {
                 // goes around strings
+                // taken j=1 because [0] hase already taken
                 // if current str shorter or symbol is not coincide
                 if (i >= strs[j].length() || c != strs[j].charAt(i)) {
                     allEqual = false;
