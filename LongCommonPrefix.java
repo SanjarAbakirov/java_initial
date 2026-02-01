@@ -19,7 +19,7 @@ public class LongCommonPrefix {
             // strs[0].length() - research length of words - elements
             char c = strs[0].charAt(i);
             // char - type "One letter / sympol only"
-            // charAt(i) - means: give me symbil of the best
+            // charAt(i) - means: give me symbol of the best
             boolean allEqual = true;
             // yes or now if letters are equal
 
