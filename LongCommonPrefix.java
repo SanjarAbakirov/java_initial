@@ -29,11 +29,8 @@ public class LongCommonPrefix {
             } else {
                 break;
             }
-
-            return ans.toString(); // return instead of returns
-
         }
-
+        return ans.toString(); // return instead of returns
     }
 
     public static void main(String[] args) {
@@ -57,5 +54,4 @@ public class LongCommonPrefix {
         // Пример 6: есть пустая строка
         System.out.println(s.longestCommonPrefix(new String[] { "ab", "" })); // ""
     }
-
 }
