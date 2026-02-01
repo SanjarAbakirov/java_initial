@@ -15,6 +15,7 @@ public class LongCommonPrefix {
         for (int i = 0; i < strs[0].length(); i++) {
             char c = strs[0].charAt(i);
             boolean allEqual = true;
+
             for (int j = 1; j < strs.length; j++) {
                 // if current str shorter or symbol is not coincide
                 if (i >= strs[j].length() || c != strs[j].charAt(i)) {
@@ -36,7 +37,7 @@ public class LongCommonPrefix {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        LongCommonPrefix s = new LongCommonPrefix();
 
         // Пример 1: общий случай
         System.out.println(s.longestCommonPrefix(new String[] { "flower", "flow", "flight" })); // "fl"
