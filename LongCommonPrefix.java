@@ -14,6 +14,7 @@ public class LongCommonPrefix {
         // The first string like example
         for (int i = 0; i < strs[0].length(); i++) {
             // length() - write for strings
+            // strs[0].length() - research length of words - elements
             char c = strs[0].charAt(i);
             boolean allEqual = true;
 
