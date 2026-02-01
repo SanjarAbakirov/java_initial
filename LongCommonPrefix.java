@@ -18,6 +18,7 @@ public class LongCommonPrefix {
             // length() - write for strings
             // strs[0].length() - research length of words - elements
             char c = strs[0].charAt(i);
+            // char - type "One letter / sympol only"
             boolean allEqual = true;
 
             for (int j = 1; j < strs.length; j++) {
