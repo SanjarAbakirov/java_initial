@@ -8,5 +8,10 @@ public class LongCommonPrefix {
         if (strs.length == 1) {
             return strs[0];
         }
+
+        StringBuilder ans = new StringBuilder();
+
+        // The first string like example
+
     }
 }
