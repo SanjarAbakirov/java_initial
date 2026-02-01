@@ -34,4 +34,26 @@ public class LongCommonPrefix {
         }
 
     }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+
+        // Пример 1: общий случай
+        System.out.println(s.longestCommonPrefix(new String[] { "flower", "flow", "flight" })); // "fl"
+
+        // Пример 2: нет общего префикса
+        System.out.println(s.longestCommonPrefix(new String[] { "dog", "racecar", "car" })); // ""
+
+        // Пример 3: все строки одинаковые
+        System.out.println(s.longestCommonPrefix(new String[] { "test", "test", "test" })); // "test"
+
+        // Пример 4: одна строка
+        System.out.println(s.longestCommonPrefix(new String[] { "single" })); // "single"
+
+        // Пример 5: пустой массив
+        System.out.println(s.longestCommonPrefix(new String[] {})); // ""
+
+        // Пример 6: есть пустая строка
+        System.out.println(s.longestCommonPrefix(new String[] { "ab", "" })); // ""
+    }
 }
