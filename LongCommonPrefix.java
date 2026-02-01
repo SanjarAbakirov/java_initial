@@ -15,6 +15,9 @@ public class LongCommonPrefix {
         for (int i = 0; i < strs[0].length(); i++) {
             char c = strs[0].charAt(i);
             boolean allEqual = true;
+            for (int j = 1; j < strs.length; j++) {
+                // if current str shorter or symbol is not coincide
+            }
 
         }
 
