@@ -36,7 +36,7 @@ public class LongCommonPrefix {
     }
 
     public static void main(String[] args) {
-        longestCommonPrefix s = new longestCommonPrefix();
+        Solution s = new Solution();
 
         // Пример 1: общий случай
         System.out.println(s.longestCommonPrefix(new String[] { "flower", "flow", "flight" })); // "fl"
@@ -56,4 +56,5 @@ public class LongCommonPrefix {
         // Пример 6: есть пустая строка
         System.out.println(s.longestCommonPrefix(new String[] { "ab", "" })); // ""
     }
+
 }
