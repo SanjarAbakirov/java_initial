@@ -21,9 +21,10 @@ public class LongCommonPrefix {
             // char - type "One letter / sympol only"
             // charAt(i) - means: give me symbil of the best
             boolean allEqual = true;
-            // yea or now if letters are equal
+            // yes or now if letters are equal
 
             for (int j = 1; j < strs.length; j++) {
+                // goes around strings
                 // if current str shorter or symbol is not coincide
                 if (i >= strs[j].length() || c != strs[j].charAt(i)) {
                     allEqual = false;
