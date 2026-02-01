@@ -17,7 +17,19 @@ public class LongCommonPrefix {
             boolean allEqual = true;
             for (int j = 1; j < strs.length; j++) {
                 // if current str shorter or symbol is not coincide
+                if (i >= strs[j].length() || c != strs[j].charAt(i)) {
+                    allEqual = false;
+                    break;
+                }
             }
+
+            if (allEqual) {
+                ans.append(c); // added symbol
+            } else {
+                break;
+            }
+
+            return ans.toString(); // return instead of returns
 
         }
 
