@@ -17,5 +17,13 @@ public class FindDisappearedNums {
                 result.add(i); // asent num is added
             }
         }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        FindDisappearedNums finder = new FindDisappearedNums();
+
+        // Test 1
+        int[] nums1 = { 4, 3, 2, 7, 8, 2, 3, 1 };
     }
 }
