@@ -1,5 +1,5 @@
 
-// ------ 242. Valid Anagram------------- 
+// ------ 242. Valid Anagram-------------
 import java.util.Arrays;
 
 public class Anagram {
