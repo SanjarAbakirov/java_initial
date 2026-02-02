@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Set;
 
 public class FindDisappearedNums {
-    public List<Integer> FindDisappearedNUms(int[] nums) {
+    public List<Integer> findDisappearedNums(int[] nums) {
         List<Integer> result = new ArrayList<>(); // var result - arrayof int, receives missed int list
-        Set<Integer> set = new HashSet<>(); // Set - multiplicity of nums
+        Set<Integer> set = new HashSet<>(); // Set - multiplicity of unique nums
         for (int num : nums) { // looks like for each, for each num in nums execute the following
             set.add(num); // set.add(num) - each num put to set<Integer>Set
         }
