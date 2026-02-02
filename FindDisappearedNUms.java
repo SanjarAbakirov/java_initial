@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class FindDisappearedNums {
+public class FindDisappearedNUms {
     public List<Integer> findDisappearedNums(int[] nums) {
         List<Integer> result = new ArrayList<>(); // var result - arrayof int, receives missed int list
         Set<Integer> set = new HashSet<>(); // Set - multiplicity of unique nums
@@ -21,7 +21,7 @@ public class FindDisappearedNums {
     }
 
     public static void main(String[] args) {
-        FindDisappearedNums finder = new FindDisappearedNums();
+        FindDisappearedNUms finder = new FindDisappearedNUms();
         // Test 1
         int[] nums1 = { 4, 3, 2, 7, 8, 2, 3, 1 };
         List<Integer> result1 = finder.findDisappearedNums(nums1);
@@ -33,7 +33,7 @@ public class FindDisappearedNums {
         System.out.println("Test 3: " + result3); // []
 
         // Тест 4: Пустой массив
-        int[] nums4 = {};
+        int[] nums4 = { 4, 4, 5 };
         List<Integer> result4 = finder.findDisappearedNums(nums4);
         System.out.println("Test 4: " + result4); // []
     }
