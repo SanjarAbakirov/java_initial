@@ -6,8 +6,8 @@ import java.util.Set;
 public class FindDisappearedNUms {
     public List<Integer> FindDisappearedNUms(int[] nums) {
         List<Integer> result = new ArrayList<>(); // var result - arrayof int, receives missed int
-        Set<Integer> set = new HashSet<>();
-        for (int num : nums) {
+        Set<Integer> set = new HashSet<>(); // Set - multiplicity of nums
+        for (int num : nums) { // looks like for each, for each num in nums execute the following
             set.add(num);
         }
         for (int i = 1; i <= nums.length; i++) {
