@@ -82,8 +82,8 @@ class FindAnagramInStr {
 
     public static void main(String[] args) {
         FindAnagramInStr finder = new FindAnagramInStr();
-        String s = "cbaebcabacd";
-        String p = "abc";
+        String s = "ainasgul";
+        String p = "san";
         List<Integer> result = finder.findAnagrams(s, p);
         System.out.println(result);
     }
