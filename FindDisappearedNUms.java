@@ -12,8 +12,9 @@ public class FindDisappearedNUms {
         }
         for (int i = 1; i <= nums.length; i++) { // i<=nums.length; i++ searching before including n
             // starting cicle from i=1 -> range [1, n]
-            if (!set.contains(i)) { // contains checks out what we have inside of Set
-                result.add(i);
+            if (!set.contains(i)) { // contains checks out what we have inside of Set, if set doesnot consists num
+                                    // then show below
+                result.add(i); // asent num is added
             }
         }
     }
