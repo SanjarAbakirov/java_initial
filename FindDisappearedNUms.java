@@ -22,10 +22,19 @@ public class FindDisappearedNums {
 
     public static void main(String[] args) {
         FindDisappearedNums finder = new FindDisappearedNums();
-
         // Test 1
         int[] nums1 = { 4, 3, 2, 7, 8, 2, 3, 1 };
-        List<Integer> result1 = finder.findDisappearedNums((nums1);
-        System.out.println("Test 1: " + result1));
+        List<Integer> result1 = finder.findDisappearedNums(nums1);
+        System.out.println("Test 1: " + result1);
+
+        // Тест 3: Один элемент
+        int[] nums3 = { 1 };
+        List<Integer> result3 = finder.findDisappearedNums(nums3);
+        System.out.println("Test 3: " + result3); // []
+
+        // Тест 4: Пустой массив
+        int[] nums4 = {};
+        List<Integer> result4 = finder.findDisappearedNums(nums4);
+        System.out.println("Test 4: " + result4); // []
     }
 }
