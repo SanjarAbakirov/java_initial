@@ -33,7 +33,7 @@ public class FindDisappearedNUms {
         System.out.println("Test 3: " + result3); // []
 
         // Тест 4: Пустой массив
-        int[] nums4 = { 4, 4, 5 };
+        int[] nums4 = { 4, 1, 2, 4, 3, 4, 5 };
         List<Integer> result4 = finder.findDisappearedNums(nums4);
         System.out.println("Test 4: " + result4); // []
     }
