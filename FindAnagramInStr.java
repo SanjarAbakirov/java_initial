@@ -5,6 +5,16 @@ import java.util.Arrays;
 import java.util.List;
 
 class findAnagramInStr {
+    public static void main(String[] args) {
+        String s = "funeral";
+        String t = "real fun";
+        if (isAnagram(s, t)) {
+            System.out.println("It is an anargam");
+        } else {
+            System.out.println("No it is not anagram");
+        }
+    }
+
     public List<Integer> findAnagrams(String s, String p) {
         // Step 1. The list for keeping results of search
         // ArrayList is dynamic array - starches
