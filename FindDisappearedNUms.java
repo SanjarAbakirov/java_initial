@@ -10,8 +10,9 @@ public class FindDisappearedNUms {
         for (int num : nums) { // looks like for each, for each num in nums execute the following
             set.add(num); // set.add(num) - each num put to set<Integer>Set
         }
-        for (int i = 1; i <= nums.length; i++) {
-            if (!set.contains(i)) {
+        for (int i = 1; i <= nums.length; i++) { // i<=nums.length; i++ searching before including n
+            // starting cicle from i=1 -> range [1, n]
+            if (!set.contains(i)) { // contains checks out what we have inside of Set
                 result.add(i);
             }
         }
