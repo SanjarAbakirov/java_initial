@@ -25,5 +25,7 @@ public class FindDisappearedNums {
 
         // Test 1
         int[] nums1 = { 4, 3, 2, 7, 8, 2, 3, 1 };
+        List<Integer> result1 = finder.findDisappearedNums((nums1);
+        System.out.println("Test 1: " + result1));
     }
 }
