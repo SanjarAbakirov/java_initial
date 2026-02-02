@@ -7,12 +7,12 @@ import java.util.List;
 class findAnagramInStr {
     public static void main(String[] args) {
         String s = "funeral";
-        String t = "real fun";
-        if (isAnagram(s, t)) {
-            System.out.println("It is an anargam");
-        } else {
-            System.out.println("No it is not anagram");
-        }
+        String p = "real fun";
+        // if (findAnagrams(s, t)) {
+        // System.out.println("It is an anargam");
+        // } else {
+        // System.out.println("No it is not anagram");
+        // }
     }
 
     public List<Integer> findAnagrams(String s, String p) {
