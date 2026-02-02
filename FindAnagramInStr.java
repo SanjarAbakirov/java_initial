@@ -83,10 +83,7 @@ class findAnagramInStr {
     public static void main(String[] args) {
         String s = "funeral";
         String p = "real fun";
-        if (findAnagrams(s, p)) {
-            System.out.println("It is an anargam");
-        } else {
-            System.out.println("No it is not anagram");
-        }
+        List<Integer> result = finder.findAnagrams(s, p);
+        System.out.println(result);
     }
 }
