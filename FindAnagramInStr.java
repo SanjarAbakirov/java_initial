@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class findAnagramInStr {
+class FindAnagramInStr {
     public List<Integer> findAnagrams(String s, String p) {
         // Step 1. The list for keeping results of search
         // ArrayList is dynamic array - starches
@@ -81,8 +81,8 @@ class findAnagramInStr {
     }
 
     public static void main(String[] args) {
-        findAnagramInStr finder = new findAnagramInStr();
-        String s = "cbaebabacd";
+        FindAnagramInStr finder = new FindAnagramInStr();
+        String s = "cbaebcabacd";
         String p = "abc";
         List<Integer> result = finder.findAnagrams(s, p);
         System.out.println(result);
