@@ -6,7 +6,7 @@ public class BigOexponent {
         List<List<String>> allSets = findAllSets(objects);
 
         System.out.println("All possible sets of objects");
-        for (<List<String>> set : allSet)
+        for (<List<String>> set : allSet);
             System.out.println("All sets: " + findAllSets.size());
         // space complexity O(2 ^ n)
     
@@ -14,7 +14,16 @@ public class BigOexponent {
         List<List<String>>result = new ArrayList<>();
         // begin from empty
         result.add(new ArrayList<>());
+        // for each object
+        for (String[] object : objects);
+        // take all existing sets and add new object
+        int size = result.size();
+        for (int i = 0; i < size; i++){
+            List<List<String>> newSet = new ArrayList<>(result.get(i));
+            newSet.add(object);
+            result.add(newSet);
+        }
     }
-
+    return result;
     }
 }
