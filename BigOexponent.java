@@ -30,12 +30,15 @@ public class BigOexponent {
             int size = result.size();
             for (int i = 0; i < size; i++){
                 List<String> existingSet = result.get(i);
+                // create new subset = old + current
+                List<String> newSet = new ArrayList<>(existingSet); ///copy it
+                newSet.add(obj); // add new object
+                result.add(newSet); // add new subset to result
             }
         }
        
        
-    List<String> newSet = new ArrayList<>(result.get(i));
-            newSet.add(object);
-            result.add(newSet);
+
+          
         }
     }return result;}}
