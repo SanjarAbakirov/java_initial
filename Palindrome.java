@@ -28,6 +28,10 @@ public class Palindrome {
     // }
 
     // ------- Recursion ---------
+    public boolean isPalindrome(String s) {
+        String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        return isPalindromeHelper(cleaned, 0, cleaned.length() - 1);
+    }
 
     // ---------------
     public static void main(String[] args) {
