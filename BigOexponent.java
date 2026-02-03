@@ -4,7 +4,9 @@ public class BigOexponent {
     public static void main(String[] args) {
         String[] objects = { "triangle", "rectangle", "circle" };
         List<List<String>> allSets = findAllSets(objects);
-        System.out.println("All possible sets of objects");
+
+        System.out.println("All possible sets of objects:");
+
         // output all subsets
         for (List<String> set : allSets) {
             // space complexity O(2 ^ n)
