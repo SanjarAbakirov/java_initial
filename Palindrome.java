@@ -8,37 +8,38 @@ public class Palindrome {
     // }
 
     // ------2. Two Pointers method ----------
-    // public boolean isPalindrome(String s) {
-    // String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(); // 2.
-    // Устанавливаем указатели
-    // int left = 0; // Начало строки
-    // int right = cleaned.length() - 1; // Конец строки
-
-    // // 3. Двигаем указатели навстречу
-    // while (left < right) {
-    // // Сравниваем символы на позициях left и right
-    // if (cleaned.charAt(left) != cleaned.charAt(right)) {
-    // return false; // Не совпали - не палиндром
-    // }
-    // // Сдвигаем указатели
-    // left++; // двигаем вправо
-    // right--; // двигаем влево
-    // }
-    // return true; // Все символы совпали
-    // }
-
-    // ------- Recursion ---------
     public boolean isPalindrome(String s) {
         String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-        return isPalindromeHelper(cleaned, 0, cleaned.length() - 1);
+        // Устанавливаем указатели
+        int left = 0; // Начало строки
+        int right = cleaned.length() - 1; // Конец строки
+
+        // 3. Двигаем указатели навстречу
+        while (left < right) {
+            // Сравниваем символы на позициях left и right
+            if (cleaned.charAt(left) != cleaned.charAt(right)) {
+                return false; // Не совпали - не палиндром
+            }
+            // Сдвигаем указатели
+            left++; // двигаем вправо
+            right--; // двигаем влево
+        }
+        return true; // Все символы совпали
     }
 
-    private boolean isPalindromeHelper(String s, int left, int right) {
-        if (left >= right) {
-            return true;
-        }
-        return s.charAt(left) == s.charAt(right) && isPalindromeHelper(s, left + 1, right - 1);
-    }
+    // ------- Recursion ---------
+    // public boolean isPalindrome(String s) {
+    // String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+    // return isPalindromeHelper(cleaned, 0, cleaned.length() - 1);
+    // }
+
+    // private boolean isPalindromeHelper(String s, int left, int right) {
+    // if (left >= right) {
+    // return true;
+    // }
+    // return s.charAt(left) == s.charAt(right) && isPalindromeHelper(s, left + 1,
+    // right - 1);
+    // }
 
     // ---------------
     public static void main(String[] args) {
