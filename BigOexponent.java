@@ -27,14 +27,15 @@ public class BigOexponent {
         // for each object
         for (String obj : objects){
         // take all existing sets and add new object
-
+            int size = result.size();
+            for (int i = 0; i < size; i++){
+                List<String> existingSet = result.get(i);
+            }
         }
        
-        int size = result.size();
-        for (int i = 0; i < size; i++){
-            List<List<String>> newSet = new ArrayList<>(result.get(i));
+       
+    List<String> newSet = new ArrayList<>(result.get(i));
             newSet.add(object);
             result.add(newSet);
         }
-    }return result;
-}}
+    }return result;}}
