@@ -1,3 +1,6 @@
+// --------O(2^n)---exponent---------
+// create sets fron three items
+
 import java.util.*;
 
 public class BigOexponent {
@@ -19,26 +22,23 @@ public class BigOexponent {
         System.out.println("Space complexity: O(2^n)");
     }
 
-    public static List<List<String>>findAllSets(String[] objects) {
+    public static List<List<String>> findAllSets(String[] objects) {
         List<List<String>> result = new ArrayList<>();
 
         // begin from empty
         result.add(new ArrayList<>());
         // for each object
-        for (String obj : objects){
-        // take all existing sets and add new object
+        for (String obj : objects) {
+            // take all existing sets and add new object
             int size = result.size();
-            for (int i = 0; i < size; i++){
+            for (int i = 0; i < size; i++) {
                 List<String> existingSet = result.get(i);
                 // create new subset = old + current
-                List<String> newSet = new ArrayList<>(existingSet); ///copy it
+                List<String> newSet = new ArrayList<>(existingSet); /// copy it
                 newSet.add(obj); // add new object
                 result.add(newSet); // add new subset to result
             }
         }
-       
-       
-
-          
-        }
-    }return result;}}
+        return result;
+    }
+}
