@@ -15,6 +15,7 @@ public class Palindrome {
                 "hello", // false - не палиндром
                 "12321", // true - число как строка
                 "Madam, I'm Adam", // true - с пунктуацией
+                "Sanjar", // not
         };
         for (String test : testCases) {
             boolean result = palindromeCheker.isPalindrome(test);
