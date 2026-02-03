@@ -1,5 +1,5 @@
 // --------O(2^n)---exponent---------
-// create sets fron three items
+// ------create sets fron three items-----
 
 import java.util.*;
 
