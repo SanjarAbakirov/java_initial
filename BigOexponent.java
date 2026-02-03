@@ -20,12 +20,16 @@ public class BigOexponent {
     }
 
     public static List<List<String>>findAllSets(String[] objects) {
-        List<List<String>>result = new ArrayList<>();
+        List<List<String>> result = new ArrayList<>();
+
         // begin from empty
         result.add(new ArrayList<>());
         // for each object
-        for (String[] object : objects);
+        for (String obj : objects){
         // take all existing sets and add new object
+
+        }
+       
         int size = result.size();
         for (int i = 0; i < size; i++){
             List<List<String>> newSet = new ArrayList<>(result.get(i));
