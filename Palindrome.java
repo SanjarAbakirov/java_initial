@@ -37,7 +37,6 @@ public class Palindrome {
         if (left >= right) {
             return true;
         }
-
         return s.charAt(left) == s.charAt(right) && isPalindromeHelper(s, left + 1, right - 1);
     }
 
