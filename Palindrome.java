@@ -8,24 +8,28 @@ public class Palindrome {
     // }
 
     // ------2. Two Pointers method ----------
-    public boolean isPalindrome(String s) {
-        String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(); // 2. Устанавливаем указатели
-        int left = 0; // Начало строки
-        int right = cleaned.length() - 1; // Конец строки
+    // public boolean isPalindrome(String s) {
+    // String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase(); // 2.
+    // Устанавливаем указатели
+    // int left = 0; // Начало строки
+    // int right = cleaned.length() - 1; // Конец строки
 
-        // 3. Двигаем указатели навстречу
-        while (left < right) {
-            // Сравниваем символы на позициях left и right
-            if (cleaned.charAt(left) != cleaned.charAt(right)) {
-                return false; // Не совпали - не палиндром
-            }
-            // Сдвигаем указатели
-            left++; // двигаем вправо
-            right--; // двигаем влево
-        }
-        return true; // Все символы совпали
-    }
+    // // 3. Двигаем указатели навстречу
+    // while (left < right) {
+    // // Сравниваем символы на позициях left и right
+    // if (cleaned.charAt(left) != cleaned.charAt(right)) {
+    // return false; // Не совпали - не палиндром
+    // }
+    // // Сдвигаем указатели
+    // left++; // двигаем вправо
+    // right--; // двигаем влево
+    // }
+    // return true; // Все символы совпали
+    // }
 
+    // ------- Recursion ---------
+
+    // ---------------
     public static void main(String[] args) {
 
         Palindrome palindromeCheker = new Palindrome();
