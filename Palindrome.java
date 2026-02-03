@@ -33,6 +33,12 @@ public class Palindrome {
         return isPalindromeHelper(cleaned, 0, cleaned.length() - 1);
     }
 
+    private boolean isPalindromeHelper(String s, int left, int right) {
+        if (left >= right) {
+            return true;
+        }
+    }
+
     // ---------------
     public static void main(String[] args) {
 
