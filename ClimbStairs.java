@@ -1,5 +1,7 @@
+// ----------70-----------
 public class ClimbStairs {
 
+    // -----way #1------------
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
         return helper(n, dp);
