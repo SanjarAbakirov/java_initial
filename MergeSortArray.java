@@ -12,3 +12,4 @@ public class MergeSortArray {
         }
     }
 }
+// finish it
