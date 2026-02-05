@@ -31,7 +31,8 @@ public class ClimbStairs {
 
             boolean passed = (result == expectedResult);
 
-            System.out.printf("n = %-2d -> Result: %-3d | Expected: %-3d | %s%n");
+            System.out.printf("n = %-2d -> Result: %-3d | Expected: %-3d | %s%n", n, result, expectedResult,
+                    passed ? "O Passed" : "X Mistake");
         }
     }
 }
