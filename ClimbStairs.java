@@ -1,7 +1,4 @@
 public class ClimbStairs {
-    public static void main(String[] args) {
-
-    }
 
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
@@ -16,5 +13,12 @@ public class ClimbStairs {
             return dp[n];
         }
         return dp[n] = helper(n - 1, dp) + helper(n - 2, dp);
+    }
+
+    public static void main(String[] args) {
+        ClimbStairs solution = new ClimbStairs();
+
+        System.out.println("Testing task 'Climbing stairs': ");
+        System.out.println("=".repeat(40));
     }
 }
