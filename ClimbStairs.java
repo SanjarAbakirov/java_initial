@@ -34,8 +34,8 @@ public class ClimbStairs {
         System.out.println("Testing task 'Climbing stairs': ");
         System.out.println("=".repeat(40));
 
-        int[] testCases = { 1, 2, 3, 4, 5, 6, 10, 45 };
-        int[] expected = { 1, 2, 3, 4, 8, 13, 89, 90 };
+        int[] testCases = { 1, 2, 3, 4, 5, 6, 10, 45, 55 };
+        int[] expected = { 1, 2, 3, 4, 8, 13, 89, 90, 100 };
 
         for (int i = 0; i < testCases.length; i++) {
             int n = testCases[i];
