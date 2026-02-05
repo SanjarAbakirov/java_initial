@@ -30,6 +30,8 @@ public class ClimbStairs {
             int expectedResult = expected[i];
 
             boolean passed = (result == expectedResult);
+
+            System.out.printf("n = %-2d -> Result: %-3d | Expected: %-3d | %s%n");
         }
     }
 }
