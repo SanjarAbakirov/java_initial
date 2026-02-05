@@ -21,8 +21,15 @@ public class ClimbStairs {
         System.out.println("Testing task 'Climbing stairs': ");
         System.out.println("=".repeat(40));
 
-        int[] testcases = { 1, 2, 3, 4, 5, 6, 10 };
+        int[] testCases = { 1, 2, 3, 4, 5, 6, 10 };
         int[] expected = { 1, 2, 3, 4, 8, 13, 89 };
 
+        for (int i = 0; i < testCases.length; i++) {
+            int n = testCases[i];
+            int result = solution.climbStairs(n);
+            int expectedResult = expected[i];
+
+            boolean passed = (result == expectedResult);
+        }
     }
 }
