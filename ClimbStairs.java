@@ -1,4 +1,8 @@
 public class ClimbStairs {
+    public static void main(String[] args) {
+
+    }
+
     public int climbStairs(int n) {
         int[] dp = new int[n + 1];
         return helper(n, dp);
