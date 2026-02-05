@@ -20,5 +20,9 @@ public class ClimbStairs {
 
         System.out.println("Testing task 'Climbing stairs': ");
         System.out.println("=".repeat(40));
+
+        int[] testcases = { 1, 2, 3, 4, 5, 6, 10 };
+        int[] expected = { 1, 2, 3, 4, 8, 13, 89 };
+
     }
 }
