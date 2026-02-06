@@ -11,4 +11,5 @@ public class RangeSumQuery {
     public int sumRange(int left, int right) {
         return prefixSum[right + 1] - prefixSum[left];
     }
+
 }
