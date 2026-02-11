@@ -7,23 +7,23 @@ public class NumOfOneBits {
     // }
 
     // ----- saolution 2------
-    // public static int hammingWeight(int n) {
-    // int count = 0;
-    // while (n != 0) {
-    // n &= (n - 1);
-    // count++;
-    // }
-    // return count;
-    // }
-
-    // ----- solution 3 --------
     public static int hammingWeight(int n) {
         int count = 0;
-        for (int i = 0; i < 32; i++) { // int в Java — 32 бита
-            count += (n >> i) & 1;
+        while (n != 0) {
+            n &= (n - 1);
+            count++;
         }
         return count;
     }
+
+    // ----- solution 3 --------
+    // public static int hammingWeight(int n) {
+    // int count = 0;
+    // for (int i = 0; i < 32; i++) { // int в Java — 32 бита
+    // count += (n >> i) & 1;
+    // }
+    // return count;
+    // }
 
     public static void main(String[] args) {
         int[] testNumbers = {
