@@ -6,6 +6,7 @@ public class NumOfOneBits {
     // return Integer.bitCount(n);
     // }
 
+    // ----- saolution 2------
     // public static int hammingWeight(int n) {
     // int count = 0;
     // while (n != 0) {
