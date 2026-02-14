@@ -1,12 +1,11 @@
 public class DistanceHemming {
     public int distanceHemming(int x, int y) {
         return (x ^ y);
-
     }
 
     public static void main(String[] args) {
-        int x;
-        int y;
+        int x = 1;
+        int y = 4;
     }
 }
 
