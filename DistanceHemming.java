@@ -4,6 +4,8 @@ public class DistanceHemming {
     }
 
     public static void main(String[] args) {
+        System.out.println(Integer.toBinaryString(2));
+        System.out.println(Integer.toBinaryString(7));
         int x = 1;
         int y = 4;
     }
