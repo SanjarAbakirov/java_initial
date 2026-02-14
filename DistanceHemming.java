@@ -1,13 +1,14 @@
+
 public class DistanceHemming {
     public int distanceHemming(int x, int y) {
         return (x ^ y);
     }
 
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(2));
-        System.out.println(Integer.toBinaryString(7));
-        int x = 1;
-        int y = 4;
+        int x = 2;
+        int y = 5;
+        System.out.println(Integer.toBinaryString(x));
+        System.out.println(Integer.toBinaryString(y));
     }
 }
 
