@@ -16,7 +16,7 @@ public class DistanceHemming {
         return count;
     }
 
-    public int hammingDistance(int x, int y) {
+    public static int hammingDistance(int x, int y) {
         return hammingWeight(x ^ y);
     }
 
@@ -24,6 +24,8 @@ public class DistanceHemming {
         int x = 2;
         int y = 5;
         int result = hammingDistance(x, y);
+        System.out.println("x = " + x + " (binary: " + Integer.toBinaryString(x) + ")");
+        System.out.println("y = " + y + " (binary: " + Integer.toBinaryString(y) + ")");
         System.out.println(Integer.toBinaryString(x));
         System.out.println(Integer.toBinaryString(y));
     }
