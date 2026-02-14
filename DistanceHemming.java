@@ -7,6 +7,15 @@
 // x = 2 (01), y = 5 (100)
 
 public class DistanceHemming {
+    public static int hammingWeight(int n) {
+        int count = 0;
+        while (n != 0) {
+            count += n & 1;
+            n >>>= 1;
+        }
+        return count;
+    }
+
     public int distanceHemming(int x, int y) {
         return (x ^ y);
     }
