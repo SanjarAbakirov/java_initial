@@ -3,6 +3,11 @@ public class DistanceHemming {
         return (x ^ y);
 
     }
+
+    public static void main(String[] args) {
+        int x;
+        int y;
+    }
 }
 
 // 1. Расстояние Хэмминга
