@@ -1,5 +1,6 @@
 public class DistanceHemming {
-    public int distanceHemming(int target) {
+    public int distanceHemming(int x, int y) {
+        return (x ^ y);
 
     }
 }
