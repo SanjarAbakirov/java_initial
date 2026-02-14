@@ -16,13 +16,14 @@ public class DistanceHemming {
         return count;
     }
 
-    public int distanceHemming(int x, int y) {
-        return (x ^ y);
+    public int hammingDistance(int x, int y) {
+        return hammingWeight(x ^ y);
     }
 
     public static void main(String[] args) {
         int x = 2;
         int y = 5;
+        int result = hammingDistance(x, y);
         System.out.println(Integer.toBinaryString(x));
         System.out.println(Integer.toBinaryString(y));
     }
