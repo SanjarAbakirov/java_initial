@@ -26,6 +26,8 @@ public class DistanceHemming {
         int result = hammingDistance(x, y);
         System.out.println("x = " + x + " (binary: " + Integer.toBinaryString(x) + ")");
         System.out.println("y = " + y + " (binary: " + Integer.toBinaryString(y) + ")");
+        System.out.println("x ^ y = " + (x ^ y) + " (binary: " + Integer.toBinaryString(x ^ y) + ")");
+        System.out.println("Расстояние Хэмминга = " + result);
         System.out.println(Integer.toBinaryString(x));
         System.out.println(Integer.toBinaryString(y));
     }
