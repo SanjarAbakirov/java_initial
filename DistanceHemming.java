@@ -14,6 +14,7 @@ public class DistanceHemming {
             n >>>= 1;
         }
         return count;
+
     }
 
     public static int hammingDistance(int x, int y) {
