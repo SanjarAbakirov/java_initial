@@ -38,3 +38,5 @@ public class DimencionalMatrix {
         }
     }
 }
+
+// O(n * m * p)
