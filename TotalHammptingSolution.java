@@ -1,20 +1,20 @@
 public class TotalHammptingSolution {
-    class Solution {
-        public int totalHammingDistance(int[] nums) {
-            if (nums == null) {
-                return 0;
-            }
-            int distance = 0;
-            for (int i = 0; i < 32; i++) {
-                int once_count = 0;
-                for (int j = 0; j < nums.length; i++) {
-                    once_count += (nums[j] >> i) & 1;
-                }
-                distance += once_count * (nums.length - once_count);
-            }
-            return distance;
+
+    public int totalHammingDistance(int[] nums) {
+        if (nums == null) {
+            return 0;
         }
+        int distance = 0;
+        for (int i = 0; i < 32; i++) {
+            int once_count = 0;
+            for (int j = 0; j < nums.length; i++) {
+                once_count += (nums[j] >>> i) & 1;
+            }
+            distance += once_count * (nums.length - once_count);
+        }
+        return distance;
     }
+
 }
 // Example 1:
 
