@@ -20,12 +20,13 @@ public class DimencionalMatrix {
 
     public static void main(String[] ans) {
         int[][] firstMatrix = {
-                { 1, 2 },
-                { 3, 4 }
+                { 1, 0, 2 },
+                { -1, 3, 1 }
         };
         int[][] secondMatrix = {
-                { 5, 6 },
-                { 7, 8 }
+                { 3, 1 },
+                { 2, 1 },
+                { 1, 0 }
         };
         int[][] result = multiplyMatrix(firstMatrix, secondMatrix);
 
