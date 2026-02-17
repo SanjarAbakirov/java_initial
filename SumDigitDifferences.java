@@ -33,7 +33,12 @@ public class SumDigitDifferences {
     // public long sumDigitDifferences(int[] nums) {
     // int n = nums.length;
     // if (n < 2) return 0;
-    // int d = String.valueOf(nums[0]).length(); // количество цифр
+    // int d = String.valueOf(nums[0]).length();
+    // Берём первое число, превращаем его в строчку и смотрим длину – это количество
+    // цифр (например, 13 → длина 2).
+
+    // ----
+
     // long total = 0;
     // for (int pos = 0; pos < d; pos++) {
     // int[] freq = new int[10];
