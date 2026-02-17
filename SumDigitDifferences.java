@@ -28,9 +28,35 @@ public class SumDigitDifferences {
         return totalSum;
     }
 
+    // ----------------------O(k)
+
+    // public long sumDigitDifferences(int[] nums) {
+    // int n = nums.length;
+    // if (n < 2) return 0;
+    // int d = String.valueOf(nums[0]).length(); // количество цифр
+    // long total = 0;
+    // for (int pos = 0; pos < d; pos++) {
+    // int[] freq = new int[10];
+    // int divisor = (int) Math.pow(10, d - 1 - pos); // для извлечения цифры на
+    // позиции pos
+    // for (int num : nums) {
+    // int digit = (num / divisor) % 10;
+    // freq[digit]++;
+    // }
+    // long totalPairs = (long) n * (n - 1) / 2;
+    // long samePairs = 0;
+    // for (int cnt : freq) {
+    // if (cnt > 1) {
+    // samePairs += (long) cnt * (cnt - 1) / 2;
+    // }
+    // }
+    // total += totalPairs - samePairs; // пары с разными цифрами на этой позиции
+    // }
+    // return total;
+    // }
+
     public static void main(String[] args) {
         int[] nums = { 13, 23, 12 };
         System.out.println(sumOfDigitDifferences(nums)); // Ожидаем 4
     }
-
 }
