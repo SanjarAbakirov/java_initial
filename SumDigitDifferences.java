@@ -30,7 +30,7 @@ public class SumDigitDifferences {
 
     // ----------O(k)
 
-    public long sumOfDigitDifferences(int[] nums) {
+    public static int sumOfDigitDifferences(int[] nums) {
         int n = nums.length;
         if (n < 2)
             return 0;
