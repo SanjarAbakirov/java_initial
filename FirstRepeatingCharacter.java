@@ -1,6 +1,6 @@
 public class FirstRepeatingCharacter {
     public static char firstLetterToAppearTwice(String s) {
-        boolean[] seen = new boolean[26]; // для отслеживания встреченных букв
+        boolean[] seen = new boolean[32]; // для отслеживания встреченных букв
         for (char c : s.toCharArray()) {
             int index = c - 'a'; // получаем индекс буквы (0-25)
             if (seen[index]) {
@@ -12,7 +12,7 @@ public class FirstRepeatingCharacter {
     }
 
     public static void main(String[] args) {
-        String s = "vbbghkk";
+        String s = "суббота";
         System.out.println("Первая повторяющаяся буква: " + firstLetterToAppearTwice(s)); // ожидается 'c'
     }
 }
