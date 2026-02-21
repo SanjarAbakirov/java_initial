@@ -1,19 +1,39 @@
 public class CheckDistanceSameLetters {
+    // public boolean checkDistances(String s, int[] distance) {
+    // int[] first = new int[26];
+    // for (int i = 0; i < 26; i++) {
+    // first[i] = -1;
+    // }
+    // for (int i = 0; i < s.length(); i++) {
+    // int idx = s.charAt(i) - 'a';
+    // if (first[idx] == -1) {
+    // first[idx] = i;
+    // } else {
+    // int gap = i - first[idx] - 1;
+    // if (gap != distance[idx]) {
+    // return false;
+    // }
+    // }
+    // }
+    // return true;
+    // }
+
     public boolean checkDistances(String s, int[] distance) {
-        int[] first = new int[26];
-        for (int i = 0; i < 26; i++) {
-            first[i] = -1;
-        }
-        for (int i = 0; i < s.length(); i++) {
-            int idx = s.charAt(i) - 'a';
-            if (first[idx] == -1) {
-                first[idx] = i;
-            } else {
-                int gap = i - first[idx] - 1;
+        // Перебираем все буквы от 'a' до 'z'
+        for (char c = 'a'; c <= 'z'; c++) {
+            int idx = c - 'a'; // индекс буквы в массиве distance
+            int first = s.indexOf(c);
+            int last = s.lastIndexOf(c);
+            // Если буква встречается в строке (first != -1)
+            if (first != -1) {
+                // Вычисляем количество букв между двумя вхождениями
+                int gap = last - first - 1;
+                // Сравниваем с ожидаемым расстоянием
                 if (gap != distance[idx]) {
                     return false;
                 }
             }
+            // Если буква не встречается, просто игнорируем (distance[idx] может быть любым)
         }
         return true;
     }
