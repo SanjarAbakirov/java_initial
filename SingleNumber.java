@@ -27,13 +27,28 @@
 
 // }
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class SingleNumber {
+    // public int singleNumber(int[] nums) {
+    // int result = 0;
+    // for (int num : nums) { // используем for-each для читаемости
+    // result ^= num;
+    // }
+    // return result;
+    // }
+
     public int singleNumber(int[] nums) {
-        int result = 0;
-        for (int num : nums) { // используем for-each для читаемости
-            result ^= num;
+        Set<Integer> set = new HashSet<>();
+        for (int num : nums) {
+            if (set.contains(num)) {
+                set.remove(num);
+            } else {
+                set.add(num);
+            }
         }
-        return result;
+        return set.iterator().next();
     }
 
     public static void main(String[] args) {
