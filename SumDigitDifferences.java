@@ -28,36 +28,35 @@
 //         return totalSum;
 //     }
 
-    // ----------O(k)
+// ----------O(k)
 
-    public static long sumOfDigitDifferences(int[] nums) { // изменён тип на long
+public static long sumOfDigitDifferences(int[] nums) { // изменён тип на long
     int n = nums.length;
     if (n < 2)
-    return 0;
+        return 0;
     int d = String.valueOf(nums[0]).length();
 
     long total = 0;
     for (int pos = 0; pos < d; pos++) {
-    int[] freq = new int[10];
-    int divisor = (int) Math.pow(10, d - 1 - pos);
-    for (int num : nums) {
-    int digit = (num / divisor) % 10;
-    freq[digit]++;
-    }
-    long totalPairs = (long) n * (n - 1) / 2;
-    long samePairs = 0;
-    for (int cnt : freq) {
-    if (cnt > 1) {
-    samePairs += (long) cnt * (cnt - 1) / 2;
-    }
-    }
-    total += totalPairs - samePairs;
+        int[] freq = new int[10];
+        int divisor = (int) Math.pow(10, d - 1 - pos);
+        for (int num : nums) {
+            int digit = (num / divisor) % 10;
+            freq[digit]++;
+        }
+        long totalPairs = (long) n * (n - 1) / 2;
+        long samePairs = 0;
+        for (int cnt : freq) {
+            if (cnt > 1) {
+                samePairs += (long) cnt * (cnt - 1) / 2;
+            }
+        }
+        total += totalPairs - samePairs;
     }
     return total;
-    }
+}
 
-    public static void main(String[] args) {
-        int[] nums = { 13, 23, 12 };
-        System.out.println(sumOfDigitDifferences(nums)); // теперь выведет 4
-    }
+public static void main(String[] args) {
+    int[] nums = { 13, 23, 12 };
+    System.out.println(sumOfDigitDifferences(nums)); // теперь выведет 4
 }
