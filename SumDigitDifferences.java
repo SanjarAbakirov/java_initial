@@ -44,7 +44,7 @@ public static long sumOfDigitDifferences(int[] nums) { // изменён тип 
             int digit = (num / divisor) % 10;
             freq[digit]++;
         }
-        long totalPairs = (long) n * (n - 1) / 2;
+        long totalPairs = (long) n * (n - 1) / 2;// количество пар
         long samePairs = 0;
         for (int cnt : freq) {
             if (cnt > 1) {
