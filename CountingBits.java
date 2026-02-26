@@ -11,7 +11,14 @@ public class CountingBits {
         }
     }
 
-    public static void main(String args) {
+    public static void main(String[] args) {
+        CountingBits cb = new CountingBits();
+        Solution sol = cb.new Solution();
 
+        int n = 5;
+        int[] result = sol.countBits(n);
+
+        System.out.println("n = " + n);
+        System.out.println("Результат: " + Arrays.toString(result));
     }
 }
