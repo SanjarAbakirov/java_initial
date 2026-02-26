@@ -12,6 +12,7 @@ public class CountingBits {
             return ans;
         }
     }
+    // -----var - 1 ----------
 
     public static void main(String[] args) {
         CountingBits cb = new CountingBits();
