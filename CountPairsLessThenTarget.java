@@ -1,7 +1,6 @@
 
 // --------- 2824 ------------------
 import java.util.List;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class CountPairsLessThenTarget {
@@ -25,7 +24,6 @@ public class CountPairsLessThenTarget {
         CountPairsLessThenTarget solution = new CountPairsLessThenTarget(); // create an object
 
         int result = solution.countPairs(nums, target); // call the method
-        System.out.println("The quantity of the pairs that less" + target + " = " + result);
-
+        System.out.println("The quantity of the pairs that less than " + target + " is " + result);
     }
 }
