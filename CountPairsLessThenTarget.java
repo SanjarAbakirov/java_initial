@@ -1,4 +1,9 @@
+
 // --------- 2824 ------------------
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class CountPairsLessThenTarget {
     public int countPairs(List<Integer> nums, int target) {
         int count = 0;
@@ -12,7 +17,7 @@ public class CountPairsLessThenTarget {
         }
     }
 
-    public static void main(String[]){
-        
+    public static void main(String[] args) {
+
     }
 }
