@@ -22,7 +22,9 @@ public class CountPairsLessThenTarget {
     public static void main(String[] args) {
         List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5);
         int target = 7;
-        int result = solution;
+        CountPairsLessThenTarget solution = new CountPairsLessThenTarget(); // create an object
+
+        int result = solution.countPairs(nums, target); // call the method
         System.out.println("The quantity of the pairs that less" + target + " = " + result);
 
     }
