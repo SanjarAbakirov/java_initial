@@ -39,7 +39,10 @@ public static long sumOfDigitDifferences(int[] nums) { // изменён тип 
     long total = 0;
     for (int pos = 0; pos < d; pos++) {
         int[] freq = new int[10];
-        int divisor = (int) Math.pow(10, d - 1 - pos);
+        // Чтобы достать цифру из нужного числа, мы должны «отбросить» все числа слева
+        // от него и оставить только те, что справа, а потом взять самую правую цифру.
+        int divisor = (int) Math.pow(10, d - 1 - pos); // Нужно разделить число на 10 в степени, равной количеству чисел
+                                                       // справа от нужного.
         for (int num : nums) {
             int digit = (num / divisor) % 10;
             freq[digit]++;
