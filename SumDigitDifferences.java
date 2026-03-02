@@ -60,6 +60,6 @@ public static long sumOfDigitDifferences(int[] nums) { // изменён тип 
 }
 
 public static void main(String[] args) {
-    int[] nums = { 13, 23, 12 };
+    int[] nums = { 13, 23, 12, 31 };
     System.out.println(sumOfDigitDifferences(nums)); // теперь выведет 4
 }
