@@ -6,6 +6,10 @@ public class ExponentEx {
         // ------three objects-----
         String[] objects = { "triangle", "cube", "circul" };
         // Lookin for all possible options
-        List<List<String>> allSets = findAllSets(objects);
+        List<List<String>> allSet = findAllSets(objects);
+        System.out.println("All possible sets of objects");
+        for (List<List> set : allSet)
+            ;
+        System.out.println("All sets: " + allSet.size());
     }
 }
