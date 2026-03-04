@@ -12,9 +12,9 @@ public class MajorityElement {
     }
 
     public static void main(String[] args){
-        nums = [2,2,1,1,1,2,2];
-        
-        majorityElement(nums)
+        int[] nums = [2,2,1,1,1,2,2];
+        MajorityElement me = new MajorityElement();
+        int result = me.majorityElement(nums);
     }
 
 }
