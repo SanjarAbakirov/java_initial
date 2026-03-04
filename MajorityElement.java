@@ -10,4 +10,11 @@ public class MajorityElement {
         }
         return candidate;
     }
+
+    public static void main(String[] args){
+        nums = [2,2,1,1,1,2,2];
+        
+        majorityElement(nums)
+    }
+
 }
