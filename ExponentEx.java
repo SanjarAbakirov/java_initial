@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.List;
 
 public class ExponentEx {
     // -------O(2^n)------
@@ -11,5 +12,7 @@ public class ExponentEx {
         for (List<List> set : allSet)
             ;
         System.out.println("All sets: " + allSet.size());
+        // Here we have complexity O(2^n)
+
     }
 }
