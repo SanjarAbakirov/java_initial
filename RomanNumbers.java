@@ -1,5 +1,5 @@
 public class RomanNumbers {
-    public int romanToInt(String s) {
+    public static int romanToInt(String s) {
         String I = 1;
         String V = 5;
         String X = 10;
@@ -12,6 +12,7 @@ public class RomanNumbers {
     }
 
     public static void main(String[] args) {
-        String s = "MCMXCIV";
+        String input = "MCMXCIV";
+        String roman = romanToInt(input);
     }
 }
