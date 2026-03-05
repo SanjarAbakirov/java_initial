@@ -2,11 +2,12 @@
 
 public class RemoveEl {
     public int removeElement(int[] nums, int val) {
-        if(nums.length < 2) return 0;
+        if (nums.length < 2)
+            return 0;
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == val) {
-                nums.remove(int i);
+                nums.remove(nums[i]);
             }
         }
         return nums.length;
