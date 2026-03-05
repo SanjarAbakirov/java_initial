@@ -7,9 +7,10 @@ public class RemoveEl {
 
     public static void main(String[] args) {
         int[] nums = { 3, 2, 2, 3 };
+        int val = 3;
         RemoveEl me = new RemoveEl();
-        int result = me.removeElement(nums);
-        System.out.println("Majority element is: " + result);
+        int newLength = me.removeElement(nums, val);
+        System.out.println("Majority element is: " + newLength);
     }
 
 }
