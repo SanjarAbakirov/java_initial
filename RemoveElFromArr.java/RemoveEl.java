@@ -4,7 +4,7 @@ public class RemoveEl {
     public int removeElement(int[] nums, int val) {
         int n = nums.length;
         for (int i = 0; i < n; i++) {
-
+            nums.removeIf(nums[i] == val);
         }
     }
 
