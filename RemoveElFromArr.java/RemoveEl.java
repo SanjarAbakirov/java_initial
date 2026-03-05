@@ -4,8 +4,11 @@ public class RemoveEl {
     public int removeElement(int[] nums, int val) {
         int n = nums.length;
         for (int i = 0; i < n; i++) {
-            if(nums[i] == val) {
-                nums.removeElement(nums, nums[i])}
+            if (nums[i] == val) {
+                nums.splice(i, 1);
+                i--;
+
+            }
         }
     }
 
