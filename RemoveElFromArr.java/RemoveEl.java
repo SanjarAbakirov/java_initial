@@ -2,9 +2,9 @@
 
 public class RemoveEl {
     public int removeElement(int[] nums, int val) {
-
+        int k = 0; // индексы, уда будем записывать подходящие элементы
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == val) {
+            if (nums[i] != val) {
                 nums.remove(nums[i]);
             }
         }
