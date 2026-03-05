@@ -5,10 +5,11 @@ public class RemoveEl {
         int k = 0; // индексы, уда будем записывать подходящие элементы
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
-                nums.remove(nums[i]);
+                nums[k] = nums[i];
+                k++;
             }
         }
-        return nums.length;
+        return k;
     }
 
     public static void main(String[] args) {
