@@ -16,6 +16,6 @@ public class RemoveEl {
         int val = 3;
         RemoveEl me = new RemoveEl();
         int newLength = me.removeElement(nums, val);
-        System.out.println("Majority element is: " + newLength);
+        System.out.println("New length after removal is: " + newLength);
     }
 }
