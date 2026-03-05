@@ -2,14 +2,13 @@
 
 public class RemoveEl {
     public int removeElement(int[] nums, int val) {
-        int n = nums.length;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] == val) {
                 nums.splice(i, 1);
                 i--;
-
             }
         }
+        return nums.length;
     }
 
     public static void main(String[] args) {
