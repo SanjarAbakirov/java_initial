@@ -4,7 +4,7 @@ import java.util.Map;
 public class RomanNumbers {
     public int romanToInt(String s) {
         Map<Character, Integer> romanMap = new HashMap<>();
-        String I = 1;
+        romanMap.put = ('I', 1);
         String V = 5;
         String X = 10;
         String L = 50;
