@@ -28,6 +28,9 @@ public class RomanNumbers {
     }
 
     public void main(String[] args) {
+        RomanNumbers rn = RomanNumbers();
+
+        String[] tests = {"III", "LVIII", "MCMXCIV"}
 
     }
 }
