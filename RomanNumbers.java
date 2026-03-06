@@ -28,9 +28,13 @@ public class RomanNumbers {
     }
 
     public void main(String[] args) {
-        RomanNumbers rn = RomanNumbers();
+        RomanNumbers rn = new RomanNumbers();
 
-        String[] tests = {"III", "LVIII", "MCMXCIV"}
+        String[] tests = { "III", "LVIII", "MCMXCIV" };
+        for (String roman : tests) {
+            int result = rn.romanToInt(roman);
+            System.out.println(roman + " = " + result);
+        }
 
     }
 }
