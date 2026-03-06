@@ -11,9 +11,14 @@ public class RomanNumbers {
         String C = 100;
         String D = 500;
         String M = 1000;
-        String input = "MCMXCIV";
-        int num = Integer.parseInt(I);
-        String roman = romanToInt(input);
+
+        int total = 0;
+        int length = s.length();
+
+        for (int i = 0; i < length; i++) {
+
+        }
+
     }
 
     public void main(String[] args) {
