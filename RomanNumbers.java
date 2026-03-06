@@ -16,7 +16,7 @@ public class RomanNumbers {
         int length = s.length();
 
         for (int i = 0; i < length; i++) {
-            int current = romanMap.get(s.charAt(i))
+            int current = romanMap.get(s.charAt(i));
         }
 
     }
