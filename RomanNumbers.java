@@ -3,10 +3,6 @@ import java.util.Map;
 
 public class RomanNumbers {
     public int romanToInt(String s) {
-
-    }
-
-    public void main(String[] args) {
         Map<Character, Integer> romanMap = new HashMap<>();
         String I = 1;
         String V = 5;
@@ -18,5 +14,9 @@ public class RomanNumbers {
         String input = "MCMXCIV";
         int num = Integer.parseInt(I);
         String roman = romanToInt(input);
+    }
+
+    public void main(String[] args) {
+
     }
 }
