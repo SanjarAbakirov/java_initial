@@ -3,9 +3,15 @@ import java.util.Map;
 
 public class RomanNumbers {
     public int romanToInt(String s) {
-        Map<Character, Integer> romanMap = new HashMap<>();
-        romanMap.put = ('I', 1);
-        String V = 5;
+        Map<Character, Integer> romanMap = new HashMap<>(){
+    romanMap.put = ('I', 1);
+        romanMap.put = ('V', 5);
+            romanMap.put = ('X', 10);
+
+        }
+    
+
+
         String X = 10;
         String L = 50;
         String C = 100;
