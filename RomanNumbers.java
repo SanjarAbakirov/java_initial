@@ -18,6 +18,10 @@ public class RomanNumbers {
         for (int i = 0; i < length; i++) {
             int current = romanMap.get(s.charAt(i));
         }
+        if (i < length - 1 && current < romanMap.get(s.charAt(i + 1))) {
+            total -= current;
+        }
+        ;
 
     }
 
