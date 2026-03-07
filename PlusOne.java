@@ -17,7 +17,7 @@ public class PlusOne {
 
     public static void main(String[] args) {
         PlusOne solution = new PlusOne();
-        int[] digits = { 1, 2, 3 };
+        int[] digits = { 1, 2, 9 };
         int[] result = solution.plusOne(digits);
         System.out.println("The result is: " + Arrays.toString(result));
     }
