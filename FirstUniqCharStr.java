@@ -16,4 +16,8 @@ public class FirstUniqCharStr {
         }
         return -1;
     }
+
+    public static void main(String args) {
+
+    }
 }
