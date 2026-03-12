@@ -34,3 +34,12 @@ class Solution {
 // }
 
 // option 3
+// import java.util.Arrays;
+
+// class Solution {
+// public int removeElement(int[] nums, int val) {
+// int[] filtered = Arrays.stream(nums).filter(x -> x != val).toArray();
+// System.arraycopy(filtered, 0, nums, 0, filtered.length);
+// return filtered.length;
+// }
+// }
