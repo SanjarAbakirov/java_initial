@@ -1,5 +1,4 @@
-class StringToInt(Atoi){
-
+class StringToInt {
     public int myAtoi(String s) {
         char[] chars = s.toCharArray();
         int i = 0;
@@ -9,5 +8,11 @@ class StringToInt(Atoi){
                 return 0;
             }
         }
+        return myAtoi;
     }
+
+    public static void main(String[] args) {
+
+    }
+
 }
