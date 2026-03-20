@@ -48,9 +48,16 @@
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FindTheDifferenceStr">
     <configuration name="FindTheDifferenceStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindTheDifferenceStr" />
+      <module name="sanjarabakirov" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaxProfit" />
       <module name="sanjarabakirov" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -59,6 +66,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.FindTheDifferenceStr" />
+        <item itemvalue="Application.MaxProfit" />
       </list>
     </recent_temporary>
   </component>
