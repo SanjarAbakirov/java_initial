@@ -57,7 +57,7 @@
 // }
 
 // --------- 121 Max Profit -------- Shabdan----O(n)-
-class Solution {
+class MaxProfit {
     public int maxProfit(int[] prices) {
         if (prices.length == 0)
             return 0;
@@ -83,7 +83,7 @@ class Solution {
 
     // method for testing
     public static void main(String[] args) {
-        Solution maxProfit = new Solution();
+        MaxProfit maxProfit = new MaxProfit();
 
         int[] prices = { 7, 1, 5, 3, 6, 4 };
         int result = maxProfit.maxProfit(prices);
