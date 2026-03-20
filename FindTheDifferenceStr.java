@@ -20,7 +20,7 @@ class FindTheDifferenceStr {
     }
 
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        FindTheDifferenceStr sol = new FindTheDifferenceStr();
 
         // Пример 1
         String s1 = "abcd";
@@ -40,14 +40,14 @@ class FindTheDifferenceStr {
         String s3 = "aeiou";
         String t3 = "aeioua";
         System.out.println("s = " + s3 + ", t = " + t3);
-        System.out.println("Added letter: " + sol.findTheDifference(s3, t3));
+        System.out.println("Added letter: " + sol.FindTheDifferenceStr(s3, t3));
         System.out.println();
 
         // Пример 4 (буквы могут повторяться)
         String s4 = "hello";
         String t4 = "helloo";
         System.out.println("s = " + s4 + ", t = " + t4);
-        System.out.println("Added letter: " + sol.findTheDifference(s4, t4));
+        System.out.println("Added letter: " + sol.FindTheDifferenceStr(s4, t4));
     }
 }
 
