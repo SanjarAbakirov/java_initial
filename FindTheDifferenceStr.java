@@ -1,18 +1,22 @@
 import java.util.*;
 
 class FindTheDifferenceStr {
-    public char findTheDifference(String s, String t) {
-        int sum = 0;
-        // Суммируем ASCII‑коды всех символов в t
-        for (char c : t.toCharArray()) {
-            sum += c;
-        }
-        // Вычитаем ASCII‑коды всех символов в s
+    public char FindTheDifferenceStr(String s, String t) {
+        Map<Character, Integer> map = new HashMap<>();
         for (char c : s.toCharArray()) {
-            sum -= c;
+            map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        // Остаток – это ASCII‑код добавленной буквы
-        return (char) sum;
+        for (char c : t.toCharArray()) {
+            if (!map.containsKey(c)) {
+                return c;
+            }
+            int count = map.get(c);
+            if (count == 0) {
+                return c;
+            }
+            map.put(c, count - 1);
+        }
+        return ' ';
     }
 
     public static void main(String[] args) {
@@ -22,14 +26,14 @@ class FindTheDifferenceStr {
         String s1 = "abcd";
         String t1 = "abcde";
         System.out.println("s = " + s1 + ", t = " + t1);
-        System.out.println("Added letter: " + sol.findTheDifference(s1, t1));
+        System.out.println("Added letter: " + sol.FindTheDifferenceStr(s1, t1));
         System.out.println();
 
         // Пример 2
         String s2 = "a";
         String t2 = "aa";
         System.out.println("s = " + s2 + ", t = " + t2);
-        System.out.println("Added letter: " + sol.findTheDifference(s2, t2));
+        System.out.println("Added letter: " + sol.FindTheDifferenceStr(s2, t2));
         System.out.println();
 
         // Пример 3
