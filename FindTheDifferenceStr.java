@@ -53,3 +53,17 @@ class FindTheDifferenceStr {
 
 
 
+// запасной вариант
+
+//public char findTheDifference(String s, String t) {
+//    int sum = 0;
+//    // Суммируем ASCII‑коды всех символов в t
+//    for (char c : t.toCharArray()) {
+//        sum += c;
+//    }
+//    // Вычитаем ASCII‑коды всех символов в s
+//    for (char c : s.toCharArray()) {
+//        sum -= c;
+//    }
+//    // Остаток – это ASCII‑код добавленной буквы
+//    return (char) sum;
