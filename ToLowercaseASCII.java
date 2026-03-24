@@ -1,6 +1,6 @@
 public class ToLowercaseASCII {
     public static void main(String[] args) {
-        String str = "HeLLo";
+        String str = "HeLLo I am Sam";
         String lower = toLowerCaseAscii(str);
         System.out.println(lower); // hello
     }
