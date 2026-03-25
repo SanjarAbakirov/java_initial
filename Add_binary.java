@@ -19,7 +19,7 @@ class Add_binary {
     public static void main(String[] args) {
         String a = "1010";
         String b = "1011";
-    };
+    }
 
     public String addBinary(String a, String b) {
 
@@ -27,7 +27,8 @@ class Add_binary {
         BigInteger sum2 = new BigInteger(b, 2);
 
         BigInteger sum = sum1.add(sum2);
-        return sum.toString(2);
         System.out.println("the result is: " + sum);
+        return sum.toString(2);
+
     }
 }
