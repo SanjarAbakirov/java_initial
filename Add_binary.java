@@ -20,6 +20,8 @@ class Add_binary {
         String a = "1010";
         String b = "1011";
         Add_binary obj = new Add_binary(); // создаём объект, чтобы вызвать нестатический метод
+        String result = obj.addBinary(a, b);
+        System.out.println("the result is: " + result); // вывод результата
     }
 
     public String addBinary(String a, String b) {
