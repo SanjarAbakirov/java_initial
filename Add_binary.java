@@ -19,6 +19,7 @@ class Add_binary {
     public static void main(String[] args) {
         String a = "1010";
         String b = "1011";
+        Add_binary obj = new Add_binary(); // создаём объект, чтобы вызвать нестатический метод
     }
 
     public String addBinary(String a, String b) {
