@@ -11,9 +11,9 @@ class MoveZeroes {
             while (r < n && nums[r] == 0) {
                 r++;
             }
-            if (r == l) {
-                break;
-            }
+            // if (r == l) {
+            // break;
+            // }
             // nums[r] != 0;
             nums[l] = nums[r];
             // if l = 0 we will rewrite it to l's place again
