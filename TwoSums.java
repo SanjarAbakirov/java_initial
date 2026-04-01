@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
+//====== the first way ======
 // public class TwoSums {
 //     public int[] twoSums(int[] nums, int target) {
 //         if (nums == null && nums.length < 2)
@@ -20,6 +21,7 @@ import java.util.Map;
 
 // }
 
+// === second way ====
 public class TwoSums {
     public int[] twoSums(int[] nums, int target) {
         if (nums == null && nums.length < 2)
