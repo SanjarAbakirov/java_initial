@@ -44,3 +44,43 @@ class SortAnagram {
         }
     }
 }
+
+// ==== the second way=====
+
+// import java.util.*;
+
+// public class Solution {
+// public List<List<String>> groupAnagrams(String[] strs) {
+// if (strs == null || strs.length == 0) {
+// return new ArrayList<>();
+// }
+
+// Map<String, List<String>> map = new HashMap<>();
+
+// for (String word : strs) {
+// // Сортируем символы для получения ключа
+// char[] chars = word.toCharArray();
+// Arrays.sort(chars);
+// String key = new String(chars);
+
+// // Добавляем слово в соответствующую группу
+// if (!map.containsKey(key)) {
+// map.put(key, new ArrayList<>());
+// }
+// map.get(key).add(word);
+// }
+
+// return new ArrayList<>(map.values());
+// }
+
+// // Тестирование
+// public static void main(String[] args) {
+// Solution sol = new Solution();
+// String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+
+// List<List<String>> result = sol.groupAnagrams(strs);
+
+// System.out.println(result);
+// // Вывод: [[eat, tea, ate], [tan, nat], [bat]]
+// }
+// }
