@@ -24,8 +24,8 @@ import java.util.Map;
 // === second way ====
 public class TwoSums {
     public int[] twoSums(int[] nums, int target) {
-        if (nums == null && nums.length < 2)
-            return null;
+        // if (nums == null && nums.length < 2)
+        // return null;
 
         Map<Integer, Integer> idxByValue = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
