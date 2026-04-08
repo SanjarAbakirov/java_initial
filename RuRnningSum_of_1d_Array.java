@@ -3,6 +3,10 @@ public class RuRnningSum_of_1d_Array {
         int[] nums = { 1, 2, 3, 4 };
 
     }
+
+    public int[] runningSum(int[] nums) {
+
+    }
 }
 
 // Output:[1,3,6,10]
