@@ -7,8 +7,7 @@ public class RuRnningSum_of_1d_Array {
         // Вывод: Результат: [1, 3, 6, 10]
     }
 
-    public int[] runningSum(int[] nums) {
-        // === the first option ===
+    public static int[] runningSum(int[] nums) {
         int[] results = new int[nums.length];
         results[0] = nums[0];
         for (int i = 1; i < nums.length; i++) {
