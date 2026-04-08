@@ -1,11 +1,18 @@
 public class RuRnningSum_of_1d_Array {
     public static void main(String[] args) {
         int[] nums = { 1, 2, 3, 4 };
+        runningSum(int[] a);
 
     }
 
     public int[] runningSum(int[] nums) {
-
+        // === the first option ===
+        int[] results = new int[nums.length];
+        results[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            results[i] = nums[i] + results[i - 1];
+        }
+        return results;
     }
 }
 
