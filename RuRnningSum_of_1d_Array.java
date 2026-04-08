@@ -1,6 +1,6 @@
 public class RuRnningSum_of_1d_Array {
     public static void main(String[] args) {
-        int[] nums = { 1, 2, 3, 4, 5 };
+        int[] nums = { 1, 2, 3, 4, 5, 6 };
         int[] result = runningSum(nums);
         // Выводим результат (вариант с Arrays.toString)
         System.out.println("Результат: " + java.util.Arrays.toString(result));
