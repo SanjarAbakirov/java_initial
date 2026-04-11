@@ -34,7 +34,7 @@ import java.util.List;
 // TC: O(n)
 // SC: O(1)
 
-class Solution {
+public class FizzBuzz {
     public List<String> fizzBuzz(int n) {
         List<String> answer = new ArrayList<>(n);
         for (int i = 1; i <= n; i++) {
@@ -61,7 +61,7 @@ class Solution {
 
     public static void main(String[] args) {
         FizzBuzz fb = new FizzBuzz();
-        List<String> result = fb.fizzBuzz(15);
+        List<String> result = fb.fizzBuzz(30);
 
         for (String s : result) {
             System.out.println(s);
