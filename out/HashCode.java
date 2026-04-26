@@ -20,5 +20,12 @@ public class hashCode {
         String language = Geeks.get("Language");
         Sysytem.out.println("Language: " + language);
 
+//        Using the containsKey() method to check if a key exists in the HashMap
+        boolean containsKey = Geeks.containsKey("Code");
+        System.out.println("Contains key 'Code'? " + containsKey);
+
+//        Using the containsValue() method to check if a value exists in the HashMap
+        boolean containsValue = Geeks.containsValue("More");
+        System.out.println("Contains Value 'More'? " + containsValue);
     }
 }
