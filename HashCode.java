@@ -18,7 +18,7 @@ public class hashCode {
 
 //        Printing out the values of the HashMap
         String language = Geeks.get("Language");
-        Sysytem.out.println("Language: " + language);
+        System.out.println("Language: " + language);
 
 //        Using the containsKey() method to check if a key exists in the HashMap
         boolean containsKey = Geeks.containsKey("Code");

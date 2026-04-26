@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129d6d49-17be-4599-8183-23a5dd59e866" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/Permutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sanjarabakirov/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/RemoveEl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/Solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sanjarabakirov/Solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/TwoSums.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/tech.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/HashCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/HashCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
