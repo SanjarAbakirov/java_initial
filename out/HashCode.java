@@ -37,6 +37,10 @@ public class hashCode {
         System.out.println("Entry Set: " + entrySet);
 
 //        Using the remove() method to remove a key-value pair from the HasMap
+        System.out.println("hashmap contents after clear(): " + Geeks);
 
+//        Using the isEmpty method toi check if the HashMap is empty
+        boolean isEmpty = Geeks.isEmpty();
+        System.out.println("is Empty? " + isEmpty);
     }
 }
