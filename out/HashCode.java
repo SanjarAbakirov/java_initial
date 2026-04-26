@@ -31,5 +31,12 @@ public class hashCode {
 //        Using the keySet() method to retrieve a Set of all keys in the HashMap
         Set<String> keySet = Geeks.keySet();
         System.out.println("Key set: " + keySet);
+
+//        Using the values() method to retrive a Collection of all values in the HashMap
+        Set<Map.Entry<String, String>> entrySet = Geeks.entrySet();
+        System.out.println("Entry Set: " + entrySet);
+
+//        Using the remove() method to remove a key-value pair from the HasMap
+
     }
 }
