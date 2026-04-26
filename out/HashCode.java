@@ -27,5 +27,9 @@ public class hashCode {
 //        Using the containsValue() method to check if a value exists in the HashMap
         boolean containsValue = Geeks.containsValue("More");
         System.out.println("Contains Value 'More'? " + containsValue);
+
+//        Using the keySet() method to retrieve a Set of all keys in the HashMap
+        Set<String> keySet = Geeks.keySet();
+        System.out.println("Key set: " + keySet);
     }
 }
