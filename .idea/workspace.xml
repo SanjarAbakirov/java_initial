@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129d6d49-17be-4599-8183-23a5dd59e866" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindTheDifferenceStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/FindTheDifferenceStr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/FizzBuzz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SortAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/SortAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sanjarabakirov/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/FindTheDifferenceStr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/FizzBuzz$hashCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/FizzBuzz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/SortAnagram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cats.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cats.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

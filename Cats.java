@@ -4,8 +4,13 @@ public class Cats {
     int meou;
 
     void sayHi(){
-        System.out.println("Hello. I am cat. My nae is " + name + ". I am " + "color." + "I say meou " + meou + " times!");
+        System.out.println("Hello. I am cat. My name is " + name + ". I am " + "color." + "I say meou " + meou + " times!");
     }
+
+    void sleep() {
+        System.out.println("Z z z ... Z z z ..." + name + " is sleeping!");
+    }
+
 }
 
 class Main{
@@ -16,5 +21,6 @@ class Main{
         barsik.meou = 3;
 
         barsik.sayHi();
+        barsik.sleep();
     }
 }
