@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="129d6d49-17be-4599-8183-23a5dd59e866" name="Changes" comment="" />
+    <list default="true" id="129d6d49-17be-4599-8183-23a5dd59e866" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindTheDifferenceStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/FindTheDifferenceStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SortAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/SortAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sanjarabakirov/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/FindTheDifferenceStr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/FizzBuzz$hashCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/FizzBuzz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/SortAnagram.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +45,7 @@
   "keyToString": {
     "Application.Add_binary.executor": "Run",
     "Application.FindTheDifferenceStr.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.MaxProfit.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -57,7 +68,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Add_binary">
+  <component name="RunManager">
     <configuration name="Add_binary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Add_binary" />
       <module name="sanjarabakirov" />
