@@ -15,7 +15,7 @@ public class Cats {
 
 class Main{
     public static void main(String[] args){
-        Cats barsik = new Cats(); // create an object
+        Cats barsik = new Cats(); // create an object Barsik
         barsik.name = "Barsik";
         barsik.color = "grey";
         barsik.meou = 3;
