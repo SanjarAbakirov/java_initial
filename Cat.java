@@ -19,13 +19,13 @@ public class Cat {
     int sayMeow(int times){
         for (int i = 0 ; i < times; i++) {
             System.out.println("Meow!");
-            num = times;
         }
+        num = times;
         return num;
     }
 
-    int getMeowCount(int times){
-        return 2 * times;
+    int getMeowCount(int idx){
+        return 2 * idx;
     }
 }
 
@@ -40,17 +40,19 @@ class Main{
         barsik.sayHi();
         barsik.sleep();
         int base = barsik.sayMeow(3);
-        System.out.println(barsik.name + "said meow " + base + " times.");
+        int points = barsik.getMeowCount(base);
+        System.out.println(barsik.name + " said meow " + base + " times.");
+        System.out.println(barsik.name + "got " + points + " points");
         barsik.getMeowCount(2);
 
 //        Yod
-        Cat yod = new Cat();
-        yod.name = "Yod";
-        yod.color = "pale";
-        yod.breed = "yard-cat";
-
-        yod.sayHi();
-        yod.sleep();
-        yod.sayMeow(2);
+//        Cat yod = new Cat();
+//        yod.name = "Yod";
+//        yod.color = "pale";
+//        yod.breed = "yard-cat";
+//
+//        yod.sayHi();
+//        yod.sleep();
+//        yod.sayMeow(2);
     }
 }
