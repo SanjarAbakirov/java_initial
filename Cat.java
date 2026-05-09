@@ -4,12 +4,6 @@ public class Cat {
     String breed;
     int num;
 
-    void sayHi(){
-        System.out.println("Hello. I am cat. My name is " + name + ". My breed is " + breed + ". I am " + color + ". I say Meow " + num + " times!");
-    }
-    void sleep() {
-        System.out.println("Z z z ... Z z z ..." + name + " is sleeping!");
-    }
 //    void sayMeow(){
 //            for (int i = 0 ; i < meow; i++){
 //            System.out.println("Meow!");
@@ -23,11 +17,18 @@ public class Cat {
         num = times;
         return num;
     }
-
+    void sayHi(){
+        System.out.println("Hello. I am cat. My name is " + name + ". My breed is " + breed + ". I am " + color + ". I say Meow " + num + " times!");
+    }
     int getMeowCount(int idx){
         return 2 * idx;
     }
+    void sleep() {
+        System.out.println("Z z z ... Z z z ..." + name + " is sleeping!");
+    }
 }
+
+
 
 class Main{
     public static void main(String[] args){
@@ -42,17 +43,18 @@ class Main{
         int base = barsik.sayMeow(3);
         int points = barsik.getMeowCount(base);
         System.out.println(barsik.name + " said meow " + base + " times.");
-        System.out.println(barsik.name + "got " + points + " points");
-        barsik.getMeowCount(2);
+        System.out.println(barsik.name + " got " + points + " points");
 
 //        Yod
-//        Cat yod = new Cat();
-//        yod.name = "Yod";
-//        yod.color = "pale";
-//        yod.breed = "yard-cat";
-//
-//        yod.sayHi();
-//        yod.sleep();
-//        yod.sayMeow(2);
+        Cat yod = new Cat();
+        yod.name = "Yod";
+        yod.color = "pale";
+        yod.breed = "yard-cat";
+        yod.sayHi();
+        int base1 = yod.sayMeow(2);
+        int points1 = yod.getMeowCount(base1);
+        System.out.println(yod.name + " said meow " + base1 + " times.");
+        System.out.println(yod.name + " got " + points1 + " points");
+
     }
 }
