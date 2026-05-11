@@ -16,6 +16,7 @@ public class Cat {
         }
         num = times;
         return num;
+
     }
     void sayHi(){
         System.out.println("Hello. I am cat. My name is " + name + ". My breed is " + breed + ". I am " + color + ". I say Meow " + num + " times!");
@@ -55,6 +56,5 @@ class Main{
         int points1 = yod.getMeowCount(base1);
         System.out.println(yod.name + " said meow " + base1 + " times.");
         System.out.println(yod.name + " got " + points1 + " points");
-
     }
 }
