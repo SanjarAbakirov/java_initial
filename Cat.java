@@ -39,9 +39,9 @@ class Main{
         barsik.color = "grey";
         barsik.breed = "tabby";
 
+        int base = barsik.sayMeow(3);
         barsik.sayHi();
         barsik.sleep();
-        int base = barsik.sayMeow(3);
         int points = barsik.getMeowCount(base);
         System.out.println(barsik.name + " said meow " + base + " times.");
         System.out.println(barsik.name + " got " + points + " points");
@@ -51,8 +51,10 @@ class Main{
         yod.name = "Yod";
         yod.color = "pale";
         yod.breed = "yard-cat";
-        yod.sayHi();
+
         int base1 = yod.sayMeow(2);
+        yod.sayHi();
+        barsik.sleep();
         int points1 = yod.getMeowCount(base1);
         System.out.println(yod.name + " said meow " + base1 + " times.");
         System.out.println(yod.name + " got " + points1 + " points");
