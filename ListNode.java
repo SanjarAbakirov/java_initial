@@ -10,7 +10,7 @@ class ListNode {
 
 
     // 2. Главный класс с методом reverseList и main
-    public class Main {
+    class Main {
         public static ListNode reverseList(ListNode head) {
             ListNode prv = null;
             while (head != null) {
@@ -35,7 +35,7 @@ class ListNode {
             System.out.println(" → null");
         }
 
-        public static void main(String[] args) {
+        static void main(String[] args) {
             ListNode node1 = new ListNode(1);
             ListNode node2 = new ListNode(2);
             ListNode node3 = new ListNode(3);
