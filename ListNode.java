@@ -1,11 +1,13 @@
 class ListNode {
     int val;        // значение в вагончике (число)
-    ListNode next;  // ссылка на следующий вагончикs
-    // Конструктор - помогает создавать новые вагончики
+    ListNode next;  // ссылка на следующий вагончик
+
     ListNode(int val) {
         this.val = val;
         this.next = null;
     }
+}
+
 
     // 2. Главный класс с методом reverseList и main
     public class Main {
@@ -52,4 +54,3 @@ class ListNode {
             printList(reversedHead);
         }
     }
-}
