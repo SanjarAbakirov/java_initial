@@ -7,6 +7,10 @@ public class Parenthesis {
             char c = s.charAt(i);
             if (c == '(' || c == '{' || c == '['){
                 stack.push();
+            } else {
+                if(!stack.isEmpty()){
+                    return false;
+                }
             }
         }
     }
