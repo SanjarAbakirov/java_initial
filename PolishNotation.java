@@ -9,7 +9,19 @@ public class PolishNotation {
                 int b = stack.pop();
                 int a = stack.pop();
 
+                if(token.equals("+")){
+                    stack.push(a + b);
+                } else if(token.equals("-")){
+                    stack.push(a - b);
+                } else if(token.equals("*")){
+                    stack.push(a * b);
+                } else if(token.equals("/")){
+                    stack.push(a / b);
+                }
+            } else {
+                stack.push(Integer.parseInt(token));
             }
         }
+        return stack.pop();
     }
 }
