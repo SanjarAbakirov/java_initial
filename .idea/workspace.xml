@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="129d6d49-17be-4599-8183-23a5dd59e866" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/PolishNotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sanjarabakirov/PolishNotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sanjarabakirov/PolishNotation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
     &quot;Application.FindTheDifferenceStr.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.MaxProfit.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PolishNotation.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
