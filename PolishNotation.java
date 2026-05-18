@@ -2,27 +2,39 @@ import java.util.Stack;
 
 public class PolishNotation {
     public int evalRPN(String[] tokens) {
-        Stack<Integer> stack = new Stack<>();
-        for (String token : tokens) {
-            if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
-                int b = stack.pop();
-                int a = stack.pop();
+//        Stack<Integer> stack = new Stack<>();
+//        for (String token : tokens) {
+//            if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
+//                int b = stack.pop();
+//                int a = stack.pop();
+//
+//                if (token.equals("+")) {
+//                    stack.push(a + b);
+//                } else if (token.equals("-")) {
+//                    stack.push(a - b);
+//                } else if (token.equals("*")) {
+//                    stack.push(a * b);
+//                } else if (token.equals("/")) {
+//                    stack.push(a / b);
+//                }
+//            } else {
+//                stack.push(Integer.parseInt(token));
+//            }
+//        }
+//        return stack.pop();
 
-                if (token.equals("+")) {
-                    stack.push(a + b);
-                } else if (token.equals("-")) {
-                    stack.push(a - b);
-                } else if (token.equals("*")) {
-                    stack.push(a * b);
-                } else if (token.equals("/")) {
-                    stack.push(a / b);
-                }
-            } else {
-                stack.push(Integer.parseInt(token));
-            }
-        }
-        return stack.pop();
+        //second
+
+        int a, b;
+        Stack<Integer> stack = new Stack<>();
+
     }
+
+
+
+
+
+
         public static void main(String[] args) {
             PolishNotation polishNotation = new PolishNotation();
 
