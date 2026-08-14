@@ -50,14 +50,13 @@ public class Main {
 
     // 5. Точка входа — метод main
     public static void main(String[] args) {
-        // Строим дерево из примера (корень 10, левый 5 с детьми 3 и 7, правый 15 с правым 20)
-        TreeNode root = new TreeNode(10,
-                new TreeNode(5,
-                        new TreeNode(3),
-                        new TreeNode(7)),
-                new TreeNode(15,
-                        null,
-                        new TreeNode(20)));
+        TreeNode root = new TreeNode(5,
+                new TreeNode(3,
+                        new TreeNode(16),
+                        new TreeNode(8)),
+                new TreeNode(2,
+                        new TreeNode(20),
+                        null));
 
         System.out.print("Исходное дерево (pre-order): ");
         printPreOrder(root);
