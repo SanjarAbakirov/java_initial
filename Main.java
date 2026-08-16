@@ -22,7 +22,7 @@ class TreeNode {
 // 2. Главный класс
 public class Main {
     // 3. Метод составления этажей и направлений
-    public List<List<Integer>> zizag (TreeNode root) {
+    public List<List<Integer>> zigzag(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;
 
@@ -30,6 +30,7 @@ public class Main {
         queue.offer(root);
 
         boolean leftToRight = true; // flag if the direction
+
         while (!queue.isEmpty()) {
             int size = queue.size();
             List<Integer> currentLevel = new ArrayList<>(); // 1st floor
@@ -39,14 +40,15 @@ public class Main {
                 if (node.left != null) queue.offer(node.left);
                 if (node.right != null) queue.offer(node.right);
             }
+
             if (!leftToRight) {
                 Collections.reverse(currentLevel);
             }
+
             result.add(currentLevel); //sending the floor
             leftToRight = !leftToRight; // switch to another direction
         }
         return result;
-    }
     }
 
     // 4. Вспомогательный метод для печати дерева (чтобы проверить результат)
@@ -69,5 +71,19 @@ public class Main {
                 new TreeNode(2,
                         new TreeNode(20),
                         null));
+
+        System.out.print("Дерево (pre-order): ");
+        printPreOrder(root);
+        System.out.println();
+
+        // Создаём экземпляр класса Main и вызываем zigzag
+        Main main = new Main();
+        List<List<Integer>> zigzagResult = main.zigzag(root);
+
+        // Выводим результат зигзага
+        System.out.println("Зигзагообразный обход по уровням:");
+        for (List<Integer> level : zigzagResult) {
+            System.out.println(level);
+        }
     }
 }
