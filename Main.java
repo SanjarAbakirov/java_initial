@@ -1,3 +1,5 @@
+import java.util.*;
+
 // 1. Определяем свой класс TreeNode
 class TreeNode {
     int val;
@@ -17,24 +19,34 @@ class TreeNode {
     }
 }
 
-// 2. Главный класс (название должно совпадать с именем файла, например Main.java)
+// 2. Главный класс
 public class Main {
+    // 3. Метод составления этажей и направлений
+    public List<List<Integer>> zizag (TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) return result;
 
-    // 3. Метод инверсии (точно такой же, как у вас)
-    public static TreeNode invertTree(TreeNode root) {
-        if (root == null) {
-            return null;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        boolean leftToRight = true; // flag if the direction
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            List<Integer> currentLevel = new ArrayList<>(); // 1st floor
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                currentLevel.add(node.val); // adding value
+                if (node.left != null) queue.offer(node.left);
+                if (node.right != null) queue.offer(node.right);
+            }
+            if (!leftToRight) {
+                Collections.reverse(currentLevel);
+            }
+            result.add(currentLevel); //sending the floor
+            leftToRight = !leftToRight; // switch to another direction
         }
-
-        // Рекурсивно инвертируем левое и правое поддеревья
-        TreeNode left = invertTree(root.left);
-        TreeNode right = invertTree(root.right);
-
-        // Меняем местами
-        root.left = right;
-        root.right = left;
-
-        return root;
+        return result;
+    }
     }
 
     // 4. Вспомогательный метод для печати дерева (чтобы проверить результат)
@@ -57,16 +69,5 @@ public class Main {
                 new TreeNode(2,
                         new TreeNode(20),
                         null));
-
-        System.out.print("Исходное дерево (pre-order): ");
-        printPreOrder(root);
-        System.out.println();
-
-        // Инвертируем
-        TreeNode inverted = invertTree(root);
-
-        System.out.print("Инвертированное дерево (pre-order): ");
-        printPreOrder(inverted);
-        System.out.println();
     }
 }
